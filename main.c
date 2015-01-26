@@ -9,7 +9,7 @@ SDL_Rect resolution;
 enum e_menu
 {
     quitter = 0,
-    principal = 1
+    principal = 1,
 };
 
 
@@ -19,7 +19,9 @@ int main (int argc, char** argv)
     // create a new window
     SDL_Surface* screen = NULL;
 
-    if (init_SDL(&screen, &resolution))
+    TTF_Font **police = malloc(2 * sizeof(TTF_Font*));
+
+    if (init_SDL(&screen, &resolution, police))
     {
         // load an image
         SDL_Surface* bmp = SDL_LoadBMP("cb.bmp");
@@ -29,7 +31,6 @@ int main (int argc, char** argv)
             printf("Unable to load bitmap: %s\n", SDL_GetError());
             return 1;
         }
-
         // centre the bitmap on screen
         SDL_Rect dstrect;
         dstrect.x = (screen->w - bmp->w) / 2;
@@ -58,6 +59,11 @@ int main (int argc, char** argv)
                             menu = quitter;
                         break;
                     }
+                    case SDL_MOUSEBUTTONDOWN:
+                        if (event.button.x < 1)
+                            exit(1);
+                        break;
+
                 } // end switch
             } // end of message processing
 
@@ -74,8 +80,12 @@ int main (int argc, char** argv)
             // finally, update the screen :)
             SDL_Flip(screen);
         }
+        free(police);
         return 0;
     }
     else
+    {
+        free(police);
         return 1;
+    }
 }
