@@ -1,19 +1,10 @@
-#ifdef __cplusplus
-    #include <cstdlib>
-#else
-    #include <stdlib.h>
-#endif
+#include <stdlib.h>
+#include "init.h"
 
 #include <SDL/SDL.h>
+#include <SDL/SDL_TTF.h>
 
-int screenW;
-int screenH;
-
-struct product
-{
-    double prix;
-    SDL_Surface* picture;
-};
+SDL_Rect resolution;
 
 enum e_menu
 {
@@ -21,42 +12,14 @@ enum e_menu
     principal = 1
 };
 
-int init_SDL(SDL_Surface** screen)
-{
-    // initialize SDL video
-    if ( SDL_Init( SDL_INIT_VIDEO ) < 0 )
-    {
-        printf( "Unable to init SDL: %s\n", SDL_GetError() );
-        return 0;
-    }
 
-    // make sure SDL cleans up before exit
-    atexit(SDL_Quit);
-
-    const SDL_VideoInfo* info = SDL_GetVideoInfo();   //<-- calls SDL_GetVideoInfo();
-    screenW = (info->current_w * 0.7);
-    screenH = (info->current_h * 0.9);
-
-    fprintf(stderr, "=> %d\n=> %d\n", screenW, screenH);
-
-    *screen = SDL_SetVideoMode(screenW, screenH, 32,
-                                           SDL_SWSURFACE|SDL_DOUBLEBUF);
-
-    if (*screen == 0)
-    {
-        printf("Unable to set %dx%d video: %s\n", screenW, screenH, SDL_GetError());
-        return 0;
-    }
-    return 1;
-}
-
-int main ( int argc, char** argv )
+int main (int argc, char** argv)
 {
 
     // create a new window
     SDL_Surface* screen = NULL;
 
-    if (init_SDL(&screen))
+    if (init_SDL(&screen, &resolution))
     {
         // load an image
         SDL_Surface* bmp = SDL_LoadBMP("cb.bmp");
@@ -73,7 +36,6 @@ int main ( int argc, char** argv )
         dstrect.y = (screen->h - bmp->h) / 2;
 
         enum e_menu menu = principal;
-        printf("aaa");
         while (menu != quitter)
         {
             // message processing loop
