@@ -2,6 +2,7 @@ Caisse.depend
 Caisse.layout
 bin/Release/stdout.txt
 bin/Release/stderr.txt
+Caisse.cbp
 
 # Compiled Object files
 *.slo
