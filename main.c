@@ -4,7 +4,7 @@
 #include <SDL/SDL.h>
 #include <SDL/SDL_TTF.h>
 
-#define TAILLE_BOUTON 40
+#define TAILLE_BOUTON 150
 
 SDL_Rect resolution;
 
@@ -15,6 +15,7 @@ int main (int argc, char** argv)
     SDL_Surface* screen = NULL;
 
     TTF_Font **police = malloc(2 * sizeof(TTF_Font*));
+    SDL_Color noir = {0, 0, 0};
 
     if (init_SDL(&screen, &resolution, police))
     {
@@ -33,6 +34,10 @@ int main (int argc, char** argv)
         SDL_FillRect(surface_recette, NULL, SDL_MapRGB(screen->format, 255, 0, 0));
         SDL_FillRect(surface_quitter, NULL, SDL_MapRGB(screen->format, 255, 128, 0));
 
+        SDL_Surface *text_place = TTF_RenderText_Blended(police[0], "Sur place", noir);
+        SDL_Surface *text_emporter = TTF_RenderText_Blended(police[0], "Emporter", noir);
+        SDL_Surface *text_recette = TTF_RenderText_Blended(police[0], "Recette", noir);
+        SDL_Surface *text_quitter = TTF_RenderText_Blended(police[0], "Quitter", noir);
 
         if (bmp == NULL)
         {
@@ -93,10 +98,14 @@ int main (int argc, char** argv)
                 SDL_BlitSurface(surface_emporter, NULL, screen, &emporterpos);
                 SDL_BlitSurface(surface_recette, NULL, screen, &recettepos);
                 SDL_BlitSurface(surface_quitter, NULL, screen, &quitterpos);
+                SDL_BlitSurface(text_place, NULL, screen, &placepos);
+                SDL_BlitSurface(text_emporter, NULL, screen, &emporterpos);
+                SDL_BlitSurface(text_recette, NULL, screen, &recettepos);
+                SDL_BlitSurface(text_quitter, NULL, screen, &quitterpos);
             }
 
             // draw bitmap
-            SDL_BlitSurface(bmp, 0, screen, &dstrect);
+            //SDL_BlitSurface(bmp, 0, screen, &dstrect);
 
             // DRAWING ENDS HERE
 
