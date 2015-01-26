@@ -21,7 +21,7 @@ int init_SDL(SDL_Surface** screen, SDL_Rect* resolution, TTF_Font **police)
     {
         atexit(SDL_Quit);
         atexit(TTF_Quit);
-
+        SDL_WM_SetCaption("Caisse",NULL);
         //const SDL_VideoInfo* info = SDL_GetVideoInfo();   //<-- calls SDL_GetVideoInfo();
         resolution->x = 900;//(info->current_w * 0.7);
         resolution->y = 900;//(info->current_h * 0.9);

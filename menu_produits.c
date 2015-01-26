@@ -3,7 +3,9 @@
 #include <SDL/SDL.h>
 #include <SDL/SDL_TTF.h>
 
+
+
 enum e_menu menu_produits()
 {
-    return principal;
+    return m_principal;
 };

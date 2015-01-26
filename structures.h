@@ -1,5 +1,6 @@
 enum e_menu
 {
-    quitter = 0,
-    principal = 1,
+    m_quitter = 0,
+    m_principal = 1,
+    m_produits
 };
