@@ -34,7 +34,7 @@ int main (int argc, char** argv)
         SDL_FillRect(surface_recette, NULL, SDL_MapRGB(screen->format, 255, 0, 0));
         SDL_FillRect(surface_quitter, NULL, SDL_MapRGB(screen->format, 255, 128, 0));
 
-        SDL_Surface *text_place = TTF_RenderText_Blended(police[1], "Sur place", noir);
+        SDL_Surface *text_place = TTF_RenderText_Blended(police[0], "Sur place", noir);
         SDL_Surface *text_emporter = TTF_RenderText_Blended(police[0], "Emporter", noir);
         SDL_Surface *text_recette = TTF_RenderText_Blended(police[0], "Recette", noir);
         SDL_Surface *text_quitter = TTF_RenderText_Blended(police[0], "Quitter", noir);
