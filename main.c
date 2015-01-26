@@ -21,7 +21,7 @@ enum e_menu
     principal = 1
 };
 
-int init_SDL(SDL_Surface* screen)
+int init_SDL(SDL_Surface** screen)
 {
     // initialize SDL video
     if ( SDL_Init( SDL_INIT_VIDEO ) < 0 )
@@ -34,15 +34,15 @@ int init_SDL(SDL_Surface* screen)
     atexit(SDL_Quit);
 
     const SDL_VideoInfo* info = SDL_GetVideoInfo();   //<-- calls SDL_GetVideoInfo();
-    screenW = info->current_w;
-    screenH = info->current_h;
+    screenW = (info->current_w * 0.7);
+    screenH = (info->current_h * 0.9);
 
     fprintf(stderr, "=> %d\n=> %d\n", screenW, screenH);
 
-    screen = SDL_SetVideoMode(screenW, screenH, 32,
-                                           SDL_SWSURFACE|SDL_DOUBLEBUF|SDL_FULLSCREEN);
+    *screen = SDL_SetVideoMode(screenW, screenH, 32,
+                                           SDL_SWSURFACE|SDL_DOUBLEBUF);
 
-    if (screen == 0)
+    if (*screen == 0)
     {
         printf("Unable to set %dx%d video: %s\n", screenW, screenH, SDL_GetError());
         return 0;
@@ -56,12 +56,12 @@ int main ( int argc, char** argv )
     // create a new window
     SDL_Surface* screen = NULL;
 
-    if (init_SDL(screen))
+    if (init_SDL(&screen))
     {
         // load an image
         SDL_Surface* bmp = SDL_LoadBMP("cb.bmp");
 
-        if (!bmp)
+        if (bmp == NULL)
         {
             printf("Unable to load bitmap: %s\n", SDL_GetError());
             return 1;
@@ -73,6 +73,7 @@ int main ( int argc, char** argv )
         dstrect.y = (screen->h - bmp->h) / 2;
 
         enum e_menu menu = principal;
+        printf("aaa");
         while (menu != quitter)
         {
             // message processing loop
