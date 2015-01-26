@@ -1,17 +1,10 @@
 #include <stdlib.h>
 #include "init.h"
-
+#include "structures.h"
 #include <SDL/SDL.h>
 #include <SDL/SDL_TTF.h>
 
 SDL_Rect resolution;
-
-enum e_menu
-{
-    quitter = 0,
-    principal = 1,
-};
-
 
 int main (int argc, char** argv)
 {
