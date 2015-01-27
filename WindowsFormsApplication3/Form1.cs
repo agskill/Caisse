@@ -44,6 +44,8 @@ namespace WindowsFormsApplication3
             button_reset.Enabled = (choix == menu.m_plus);
             textBox_log.Enabled = (choix == menu.m_plus);
             textBox_log.Visible = (choix == menu.m_plus);
+            button_raz.Enabled = (choix == menu.m_produits);
+            button_raz.Visible = (choix == menu.m_produits);
         }
 
         private void Quitter_Click(object sender, EventArgs e)
@@ -495,6 +497,75 @@ namespace WindowsFormsApplication3
         {
             File.Delete("log.txt");
             textBox_log.Text = "";
+        }
+
+        private void button_raz_Click(object sender, EventArgs e)
+        {
+            numeric_boisson_1.Value = 0;
+            numeric_boisson_2.Value = 0;
+            numeric_boisson_3.Value = 0;
+            numeric_boisson_4.Value = 0;
+            numeric_boisson_5.Value = 0;
+            numeric_boisson_6.Value = 0;
+            numeric_boisson_7.Value = 0;
+            numeric_boisson_8.Value = 0;
+            numeric_boisson_9.Value = 0;
+            numeric_boisson_10.Value = 0;
+            numeric_boisson_11.Value = 0;
+            numeric_boisson_12.Value = 0;
+            numeric_boisson_13.Value = 0;
+            numeric_boisson_14.Value = 0;
+            numeric_boisson_15.Value = 0;
+            numeric_boisson_16.Value = 0;
+            numeric_boisson_17.Value = 0;
+            numeric_boisson_18.Value = 0;
+            numeric_boisson_19.Value = 0;
+            numeric_boisson_20.Value = 0;
+            numeric_boisson_21.Value = 0;
+            numeric_boisson_22.Value = 0;
+            numeric_boisson_23.Value = 0;
+
+            numeric_plat_1.Value = 0;
+            numeric_plat_2.Value = 0;
+            numeric_plat_3.Value = 0;
+            numeric_plat_4.Value = 0;
+            numeric_plat_5.Value = 0;
+            numeric_plat_6.Value = 0;
+            numeric_plat_7.Value = 0;
+            numeric_plat_8.Value = 0;
+            numeric_plat_9.Value = 0;
+            numeric_plat_10.Value = 0;
+            numeric_plat_11.Value = 0;
+            numeric_plat_12.Value = 0;
+            numeric_plat_13.Value = 0;
+            numeric_plat_14.Value = 0;
+            numeric_plat_15.Value = 0;
+            numeric_plat_16.Value = 0;
+            numeric_plat_17.Value = 0;
+            numeric_plat_18.Value = 0;
+            numeric_plat_19.Value = 0;
+            numeric_plat_20.Value = 0;
+            numeric_plat_21.Value = 0;
+            numeric_plat_22.Text = "";
+            numeric_plat_23.Text = "";
+
+            numeric_entree_1.Value = 0;
+            numeric_entree_2.Value = 0;
+            numeric_entree_3.Value = 0;
+            numeric_entree_4.Value = 0;
+            numeric_entree_5.Value = 0;
+            numeric_entree_6.Value = 0;
+            numeric_entree_7.Value = 0;
+            numeric_entree_8.Value = 0;
+            numeric_entree_9.Value = 0;
+
+            numeric_dessert_1.Value = 0;
+            numeric_dessert_2.Value = 0;
+            numeric_dessert_3.Value = 0;
+            numeric_dessert_4.Value = 0;
+            numeric_dessert_5.Value = 0;
+            numeric_dessert_6.Value = 0;
+            numeric_dessert_7.Value = 0;
         }
     }
 }
