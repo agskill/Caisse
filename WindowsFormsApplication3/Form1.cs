@@ -446,7 +446,6 @@ namespace WindowsFormsApplication3
             numeric_dessert_7.Value++;
         }
 
-
         private void numeric_plat_22_TextChanged(object sender, EventArgs e)
         {
             double result;
@@ -458,6 +457,16 @@ namespace WindowsFormsApplication3
         {
             double result;
             button_plat_23.Enabled = double.TryParse(numeric_plat_23.Text, out result);
+        }
+
+        private void button_boisson_22_Click(object sender, EventArgs e)
+        {
+            numeric_boisson_22.Value++;
+        }
+
+        private void button_boisson_23_Click(object sender, EventArgs e)
+        {
+            numeric_boisson_23.Value++;
         }
     }
 }

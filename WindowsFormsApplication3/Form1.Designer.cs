@@ -35,6 +35,12 @@
             this.Quitter = new System.Windows.Forms.Button();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.numeric_dessert_7 = new System.Windows.Forms.NumericUpDown();
+            this.button_dessert_7 = new System.Windows.Forms.Button();
+            this.numeric_dessert_6 = new System.Windows.Forms.NumericUpDown();
+            this.button_dessert_6 = new System.Windows.Forms.Button();
+            this.numeric_dessert_5 = new System.Windows.Forms.NumericUpDown();
+            this.button_dessert_5 = new System.Windows.Forms.Button();
             this.numeric_dessert_4 = new System.Windows.Forms.NumericUpDown();
             this.button_dessert_4 = new System.Windows.Forms.Button();
             this.numeric_dessert_3 = new System.Windows.Forms.NumericUpDown();
@@ -164,17 +170,12 @@
             this.lineShape4 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.button_calc = new System.Windows.Forms.Button();
             this.button_gotomain = new System.Windows.Forms.Button();
-
             this.textBox_log = new System.Windows.Forms.TextBox();
-            this.numeric_dessert_5 = new System.Windows.Forms.NumericUpDown();
-            this.button_dessert_5 = new System.Windows.Forms.Button();
-            this.numeric_dessert_6 = new System.Windows.Forms.NumericUpDown();
-            this.button_dessert_6 = new System.Windows.Forms.Button();
-            this.numeric_dessert_7 = new System.Windows.Forms.NumericUpDown();
-            this.button_dessert_7 = new System.Windows.Forms.Button();
-
             this.tabControl.SuspendLayout();
             this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_dessert_7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_dessert_6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_dessert_5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_dessert_4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_dessert_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_dessert_2)).BeginInit();
@@ -235,9 +236,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numeric_dessert_5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numeric_dessert_6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numeric_dessert_7)).BeginInit();
             this.SuspendLayout();
             // 
             // Emporter
@@ -325,6 +323,57 @@
             this.tabPage4.Text = "Dessert";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // numeric_dessert_7
+            // 
+            this.numeric_dessert_7.Location = new System.Drawing.Point(232, 298);
+            this.numeric_dessert_7.Name = "numeric_dessert_7";
+            this.numeric_dessert_7.Size = new System.Drawing.Size(32, 20);
+            this.numeric_dessert_7.TabIndex = 15;
+            // 
+            // button_dessert_7
+            // 
+            this.button_dessert_7.Location = new System.Drawing.Point(3, 288);
+            this.button_dessert_7.Name = "button_dessert_7";
+            this.button_dessert_7.Size = new System.Drawing.Size(223, 37);
+            this.button_dessert_7.TabIndex = 14;
+            this.button_dessert_7.Text = "Supplément chantilly";
+            this.button_dessert_7.UseVisualStyleBackColor = true;
+            this.button_dessert_7.Click += new System.EventHandler(this.button_dessert_7_Click);
+            // 
+            // numeric_dessert_6
+            // 
+            this.numeric_dessert_6.Location = new System.Drawing.Point(232, 169);
+            this.numeric_dessert_6.Name = "numeric_dessert_6";
+            this.numeric_dessert_6.Size = new System.Drawing.Size(32, 20);
+            this.numeric_dessert_6.TabIndex = 13;
+            // 
+            // button_dessert_6
+            // 
+            this.button_dessert_6.Location = new System.Drawing.Point(3, 159);
+            this.button_dessert_6.Name = "button_dessert_6";
+            this.button_dessert_6.Size = new System.Drawing.Size(223, 37);
+            this.button_dessert_6.TabIndex = 12;
+            this.button_dessert_6.Text = "Dessert 3.90";
+            this.button_dessert_6.UseVisualStyleBackColor = true;
+            this.button_dessert_6.Click += new System.EventHandler(this.button_dessert_6_Click);
+            // 
+            // numeric_dessert_5
+            // 
+            this.numeric_dessert_5.Location = new System.Drawing.Point(232, 126);
+            this.numeric_dessert_5.Name = "numeric_dessert_5";
+            this.numeric_dessert_5.Size = new System.Drawing.Size(32, 20);
+            this.numeric_dessert_5.TabIndex = 11;
+            // 
+            // button_dessert_5
+            // 
+            this.button_dessert_5.Location = new System.Drawing.Point(3, 116);
+            this.button_dessert_5.Name = "button_dessert_5";
+            this.button_dessert_5.Size = new System.Drawing.Size(223, 37);
+            this.button_dessert_5.TabIndex = 10;
+            this.button_dessert_5.Text = "Dessert 3.70";
+            this.button_dessert_5.UseVisualStyleBackColor = true;
+            this.button_dessert_5.Click += new System.EventHandler(this.button_dessert_5_Click);
+            // 
             // numeric_dessert_4
             // 
             this.numeric_dessert_4.Location = new System.Drawing.Point(232, 40);
@@ -340,6 +389,7 @@
             this.button_dessert_4.TabIndex = 8;
             this.button_dessert_4.Text = "Dessert 1.90";
             this.button_dessert_4.UseVisualStyleBackColor = true;
+            this.button_dessert_4.Click += new System.EventHandler(this.button_dessert_4_Click);
             // 
             // numeric_dessert_3
             // 
@@ -356,6 +406,7 @@
             this.button_dessert_3.TabIndex = 6;
             this.button_dessert_3.Text = "Dessert 5.20";
             this.button_dessert_3.UseVisualStyleBackColor = true;
+            this.button_dessert_3.Click += new System.EventHandler(this.button_dessert_3_Click);
             // 
             // numeric_dessert_2
             // 
@@ -372,6 +423,7 @@
             this.button_dessert_2.TabIndex = 4;
             this.button_dessert_2.Text = "Dessert 4.70";
             this.button_dessert_2.UseVisualStyleBackColor = true;
+            this.button_dessert_2.Click += new System.EventHandler(this.button_dessert_2_Click);
             // 
             // numeric_dessert_1
             // 
@@ -630,6 +682,22 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Plat";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // numeric_plat_23
+            // 
+            this.numeric_plat_23.Location = new System.Drawing.Point(480, 652);
+            this.numeric_plat_23.Name = "numeric_plat_23";
+            this.numeric_plat_23.Size = new System.Drawing.Size(153, 20);
+            this.numeric_plat_23.TabIndex = 49;
+            this.numeric_plat_23.TextChanged += new System.EventHandler(this.numeric_plat_23_TextChanged);
+            // 
+            // numeric_plat_22
+            // 
+            this.numeric_plat_22.Location = new System.Drawing.Point(480, 606);
+            this.numeric_plat_22.Name = "numeric_plat_22";
+            this.numeric_plat_22.Size = new System.Drawing.Size(153, 20);
+            this.numeric_plat_22.TabIndex = 48;
+            this.numeric_plat_22.TextChanged += new System.EventHandler(this.numeric_plat_22_TextChanged);
             // 
             // button_plat_23
             // 
@@ -955,6 +1023,7 @@
             this.button_plat_4.TabIndex = 6;
             this.button_plat_4.Text = "Porc doux\r\nPoulet doux";
             this.button_plat_4.UseVisualStyleBackColor = true;
+            this.button_plat_4.Click += new System.EventHandler(this.button_plat_4_Click);
             // 
             // numeric_plat_3
             // 
@@ -971,6 +1040,7 @@
             this.button_plat_3.TabIndex = 4;
             this.button_plat_3.Text = "Porc";
             this.button_plat_3.UseVisualStyleBackColor = true;
+            this.button_plat_3.Click += new System.EventHandler(this.button_plat_3_Click);
             // 
             // numeric_plat_2
             // 
@@ -987,6 +1057,7 @@
             this.button_plat_2.TabIndex = 2;
             this.button_plat_2.Text = "Plat ganis";
             this.button_plat_2.UseVisualStyleBackColor = true;
+            this.button_plat_2.Click += new System.EventHandler(this.button_plat_2_Click);
             // 
             // numeric_plat_1
             // 
@@ -1003,6 +1074,7 @@
             this.button_plat_1.TabIndex = 0;
             this.button_plat_1.Text = "Plaques";
             this.button_plat_1.UseVisualStyleBackColor = true;
+            this.button_plat_1.Click += new System.EventHandler(this.button_plat_1_Click);
             // 
             // shapeContainer1
             // 
@@ -1107,6 +1179,7 @@
             this.button_boisson_23.TabIndex = 48;
             this.button_boisson_23.Text = "Champagne 75";
             this.button_boisson_23.UseVisualStyleBackColor = true;
+            this.button_boisson_23.Click += new System.EventHandler(this.button_boisson_23_Click);
             // 
             // numeric_boisson_23
             // 
@@ -1123,6 +1196,7 @@
             this.button_boisson_22.TabIndex = 46;
             this.button_boisson_22.Text = "Champagne 37.5";
             this.button_boisson_22.UseVisualStyleBackColor = true;
+            this.button_boisson_22.Click += new System.EventHandler(this.button_boisson_22_Click);
             // 
             // numeric_boisson_22
             // 
@@ -1535,24 +1609,6 @@
             this.button_gotomain.Visible = false;
             this.button_gotomain.Click += new System.EventHandler(this.button_gotomain_Click);
             // 
-
-            // numeric_plat_22
-            // 
-            this.numeric_plat_22.Location = new System.Drawing.Point(480, 606);
-            this.numeric_plat_22.Name = "numeric_plat_22";
-            this.numeric_plat_22.Size = new System.Drawing.Size(153, 20);
-            this.numeric_plat_22.TabIndex = 48;
-            this.numeric_plat_22.TextChanged += new System.EventHandler(this.numeric_plat_22_TextChanged);
-            // 
-            // numeric_plat_23
-            // 
-            this.numeric_plat_23.Location = new System.Drawing.Point(480, 652);
-            this.numeric_plat_23.Name = "numeric_plat_23";
-            this.numeric_plat_23.Size = new System.Drawing.Size(153, 20);
-            this.numeric_plat_23.TabIndex = 49;
-            this.numeric_plat_23.TextChanged += new System.EventHandler(this.numeric_plat_23_TextChanged);
-            // 
-
             // textBox_log
             // 
             this.textBox_log.Enabled = false;
@@ -1563,58 +1619,6 @@
             this.textBox_log.Size = new System.Drawing.Size(853, 769);
             this.textBox_log.TabIndex = 7;
             this.textBox_log.Visible = false;
-            // 
-
-            // numeric_dessert_5
-            // 
-            this.numeric_dessert_5.Location = new System.Drawing.Point(232, 126);
-            this.numeric_dessert_5.Name = "numeric_dessert_5";
-            this.numeric_dessert_5.Size = new System.Drawing.Size(32, 20);
-            this.numeric_dessert_5.TabIndex = 11;
-            // 
-            // button_dessert_5
-            // 
-            this.button_dessert_5.Location = new System.Drawing.Point(3, 116);
-            this.button_dessert_5.Name = "button_dessert_5";
-            this.button_dessert_5.Size = new System.Drawing.Size(223, 37);
-            this.button_dessert_5.TabIndex = 10;
-            this.button_dessert_5.Text = "Dessert 3.70";
-            this.button_dessert_5.UseVisualStyleBackColor = true;
-            this.button_dessert_5.Click += new System.EventHandler(this.button_dessert_5_Click);
-            // 
-            // numeric_dessert_6
-            // 
-            this.numeric_dessert_6.Location = new System.Drawing.Point(232, 169);
-            this.numeric_dessert_6.Name = "numeric_dessert_6";
-            this.numeric_dessert_6.Size = new System.Drawing.Size(32, 20);
-            this.numeric_dessert_6.TabIndex = 13;
-            // 
-            // button_dessert_6
-            // 
-            this.button_dessert_6.Location = new System.Drawing.Point(3, 159);
-            this.button_dessert_6.Name = "button_dessert_6";
-            this.button_dessert_6.Size = new System.Drawing.Size(223, 37);
-            this.button_dessert_6.TabIndex = 12;
-            this.button_dessert_6.Text = "Dessert 3.90";
-            this.button_dessert_6.UseVisualStyleBackColor = true;
-            this.button_dessert_6.Click += new System.EventHandler(this.button_dessert_6_Click);
-            // 
-            // numeric_dessert_7
-            // 
-            this.numeric_dessert_7.Location = new System.Drawing.Point(232, 298);
-            this.numeric_dessert_7.Name = "numeric_dessert_7";
-            this.numeric_dessert_7.Size = new System.Drawing.Size(32, 20);
-            this.numeric_dessert_7.TabIndex = 15;
-            // 
-            // button_dessert_7
-            // 
-            this.button_dessert_7.Location = new System.Drawing.Point(3, 288);
-            this.button_dessert_7.Name = "button_dessert_7";
-            this.button_dessert_7.Size = new System.Drawing.Size(223, 37);
-            this.button_dessert_7.TabIndex = 14;
-            this.button_dessert_7.Text = "Supplément chantilly";
-            this.button_dessert_7.UseVisualStyleBackColor = true;
-            this.button_dessert_7.Click += new System.EventHandler(this.button_dessert_7_Click);
             // 
             // Form1
             // 
@@ -1634,6 +1638,9 @@
             this.Text = "Caisse";
             this.tabControl.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_dessert_7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_dessert_6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_dessert_5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_dessert_4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_dessert_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_dessert_2)).EndInit();
@@ -1695,9 +1702,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numeric_dessert_5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numeric_dessert_6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numeric_dessert_7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
