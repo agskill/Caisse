@@ -17,7 +17,7 @@
             {
                 components.Dispose();
             }
-            base.Dispose(false);
+            base.Dispose(disposing);
         }
 
         #region Code généré par le Concepteur Windows Form
