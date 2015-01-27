@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace WindowsFormsApplication3
 {
@@ -158,9 +159,21 @@ namespace WindowsFormsApplication3
 
         }
 
+        private void enregistre_prix(double prix)
+        {
+            FileStream log_stream = new FileStream("log.txt", FileMode.Append);
+            StreamWriter log = new StreamWriter(log_stream);
+            
+            log.WriteLine(DateTime.Now.ToString() + " : " + prix.ToString("#,#.00#;(#,#.00#)") + " €");
+            log.Close();
+            log_stream.Close();
+        }
+
         private void button_calc_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(calc_recette().ToString("#,#.00#;(#,#.00#)") + " €", "Recette");
+            double recette = calc_recette();
+            MessageBox.Show(recette.ToString("#,#.00#;(#,#.00#)") + " €", "Recette");
+            enregistre_prix(recette);
         }
 
 
