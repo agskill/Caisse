@@ -117,6 +117,9 @@ namespace WindowsFormsApplication3
                    (double)numeric_dessert_2.Value * 4.70 +
                    (double)numeric_dessert_3.Value * 5.20 +
                    (double)numeric_dessert_4.Value * 1.90 +
+                   (double)numeric_dessert_5.Value * 3.70 +
+                   (double)numeric_dessert_6.Value * 3.90 +
+                   (double)numeric_dessert_7.Value * 1.00 +
 
                    (double)numeric_entree_1.Value * 5.60 +
                    (double)numeric_entree_2.Value * 6.80 +
@@ -230,6 +233,211 @@ namespace WindowsFormsApplication3
         private void button_plat_4_Click(object sender, EventArgs e)
         {
             numeric_plat_4.Value++;
+        }
+
+        private void button_plat_5_Click(object sender, EventArgs e)
+        {
+            numeric_plat_5.Value++;
+        }
+
+        private void button_plat_6_Click(object sender, EventArgs e)
+        {
+            numeric_plat_6.Value++;
+        }
+
+        private void button_plat_7_Click(object sender, EventArgs e)
+        {
+            numeric_plat_7.Value++;
+        }
+
+        private void button_plat_8_Click(object sender, EventArgs e)
+        {
+            numeric_plat_8.Value++;
+        }
+
+        private void button_plat_9_Click(object sender, EventArgs e)
+        {
+            numeric_plat_9.Value++;
+        }
+
+        private void button_plat_10_Click(object sender, EventArgs e)
+        {
+            numeric_plat_10.Value++;
+        }
+
+        private void button_plat_11_Click(object sender, EventArgs e)
+        {
+            numeric_plat_11.Value++;
+        }
+
+        private void button_plat_12_Click(object sender, EventArgs e)
+        {
+            numeric_plat_12.Value++;
+        }
+
+        private void button_plat_13_Click(object sender, EventArgs e)
+        {
+            numeric_plat_13.Value++;
+        }
+
+        private void button_plat_14_Click(object sender, EventArgs e)
+        {
+            numeric_plat_14.Value++;
+        }
+
+        private void button_plat_15_Click(object sender, EventArgs e)
+        {
+            numeric_plat_15.Value++;
+        }
+
+        private void button_plat_16_Click(object sender, EventArgs e)
+        {
+            numeric_plat_16.Value++;
+        }
+
+        private void button_plat_17_Click(object sender, EventArgs e)
+        {
+            numeric_plat_17.Value++;
+        }
+
+        private void button_plat_18_Click(object sender, EventArgs e)
+        {
+            numeric_plat_18.Value++;
+        }
+
+        private void button_plat_19_Click(object sender, EventArgs e)
+        {
+            numeric_plat_19.Value++;
+        }
+
+        private void button_plat_20_Click(object sender, EventArgs e)
+        {
+            numeric_plat_20.Value++;
+        }
+
+        private void button_plat_21_Click(object sender, EventArgs e)
+        {
+            numeric_plat_21.Value++;
+        }
+
+        private void button_boisson_1_Click(object sender, EventArgs e)
+        {
+            numeric_boisson_1.Value++;
+        }
+
+        private void button_boisson_2_Click(object sender, EventArgs e)
+        {
+            numeric_boisson_2.Value++;
+        }
+
+        private void button_boisson_6_Click(object sender, EventArgs e)
+        {
+            numeric_boisson_6.Value++;
+        }
+
+        private void button_boisson_19_Click(object sender, EventArgs e)
+        {
+            numeric_boisson_19.Value++;
+        }
+
+        private void button_boisson_3_Click(object sender, EventArgs e)
+        {
+            numeric_boisson_3.Value++;
+        }
+
+        private void button_boisson_4_Click(object sender, EventArgs e)
+        {
+            numeric_boisson_4.Value++;
+        }
+
+        private void button_boisson_5_Click(object sender, EventArgs e)
+        {
+            numeric_boisson_5.Value++;
+        }
+
+        private void button_boisson_10_Click(object sender, EventArgs e)
+        {
+            numeric_boisson_10.Value++;
+        }
+
+        private void button_boisson_11_Click(object sender, EventArgs e)
+        {
+            numeric_boisson_11.Value++;
+        }
+
+        private void button_boisson_14_Click(object sender, EventArgs e)
+        {
+            numeric_boisson_14.Value++;
+        }
+
+        private void button_boisson_15_Click(object sender, EventArgs e)
+        {
+            numeric_boisson_15.Value++;
+        }
+
+        private void button_boisson_20_Click(object sender, EventArgs e)
+        {
+            numeric_boisson_20.Value++;
+        }
+
+        private void button_boisson_21_Click(object sender, EventArgs e)
+        {
+            numeric_boisson_21.Value++;
+        }
+
+        private void button_boisson_16_Click(object sender, EventArgs e)
+        {
+            numeric_boisson_16.Value++;
+        }
+
+        private void button_boisson_17_Click(object sender, EventArgs e)
+        {
+            numeric_boisson_17.Value++;
+        }
+
+        private void button_boisson_12_Click(object sender, EventArgs e)
+        {
+            numeric_boisson_12.Value++;
+        }
+
+        private void button_boisson_13_Click(object sender, EventArgs e)
+        {
+            numeric_boisson_13.Value++;
+        }
+
+        private void button_boisson_7_Click(object sender, EventArgs e)
+        {
+            numeric_boisson_7.Value++;
+        }
+
+        private void button_boisson_8_Click(object sender, EventArgs e)
+        {
+            numeric_boisson_8.Value++;
+        }
+
+        private void button_boisson_9_Click(object sender, EventArgs e)
+        {
+            numeric_boisson_9.Value++;
+        }
+
+        private void button_boisson_18_Click(object sender, EventArgs e)
+        {
+            numeric_boisson_18.Value++;
+        }
+
+        private void button_dessert_5_Click(object sender, EventArgs e)
+        {
+            numeric_dessert_5.Value++;
+        }
+
+        private void button_dessert_6_Click(object sender, EventArgs e)
+        {
+            numeric_dessert_6.Value++;
+        }
+
+        private void button_dessert_7_Click(object sender, EventArgs e)
+        {
+            numeric_dessert_7.Value++;
         }
 
 
