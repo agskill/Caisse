@@ -19,6 +19,9 @@ namespace WindowsFormsApplication3
             m_produits,
             m_plus
         };
+
+        private bool b_emporter;
+
         public Form1()
         {
             InitializeComponent();
@@ -55,11 +58,13 @@ namespace WindowsFormsApplication3
 
         private void Emporter_Click(object sender, EventArgs e)
         {
+            b_emporter = true;
             switch_to_product(menu.m_produits);
         }
 
         private void Sur_place_Click(object sender, EventArgs e)
         {
+            b_emporter = false;
             switch_to_product(menu.m_produits);
         }
 
@@ -144,7 +149,7 @@ namespace WindowsFormsApplication3
             double divers_20 = 0;
             double.TryParse(numeric_plat_22.Text, out divers_10);
             double.TryParse(numeric_plat_23.Text, out divers_20);
-            return (double)numeric_dessert_1.Value * 3.30 +
+            return ((double)numeric_dessert_1.Value * 3.30 +
                    (double)numeric_dessert_2.Value * 4.70 +
                    (double)numeric_dessert_3.Value * 5.20 +
                    (double)numeric_dessert_4.Value * 1.90 +
@@ -209,8 +214,8 @@ namespace WindowsFormsApplication3
                    (double)numeric_boisson_20.Value * 7.90 +
                    (double)numeric_boisson_21.Value * 11.5 +
                    (double)numeric_boisson_22.Value * 32.0 +
-                   (double)numeric_boisson_23.Value * 20.0 
-                   ;
+                   (double)numeric_boisson_23.Value * 20.0
+                   ) * (b_emporter ? 0.9 : 1);
         }
 
         private void enregistre_prix(double prix)
