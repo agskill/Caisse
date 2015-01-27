@@ -17,7 +17,7 @@
             {
                 components.Dispose();
             }
-            base.Dispose(disposing);
+            base.Dispose(false);
         }
 
         #region Code généré par le Concepteur Windows Form
@@ -172,10 +172,6 @@
             this.button_dessert_6 = new System.Windows.Forms.Button();
             this.numeric_dessert_7 = new System.Windows.Forms.NumericUpDown();
             this.button_dessert_7 = new System.Windows.Forms.Button();
-
-            this.numeric_plat_22 = new System.Windows.Forms.TextBox();
-            this.numeric_plat_23 = new System.Windows.Forms.TextBox();
-            this.textBox_log = new System.Windows.Forms.TextBox();
 
             this.tabControl.SuspendLayout();
             this.tabPage4.SuspendLayout();
@@ -634,20 +630,6 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Plat";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // numeric_plat_23
-            // 
-            this.numeric_plat_23.Location = new System.Drawing.Point(480, 652);
-            this.numeric_plat_23.Name = "numeric_plat_23";
-            this.numeric_plat_23.Size = new System.Drawing.Size(153, 20);
-            this.numeric_plat_23.TabIndex = 49;
-            // 
-            // numeric_plat_22
-            // 
-            this.numeric_plat_22.Location = new System.Drawing.Point(480, 606);
-            this.numeric_plat_22.Name = "numeric_plat_22";
-            this.numeric_plat_22.Size = new System.Drawing.Size(153, 20);
-            this.numeric_plat_22.TabIndex = 48;
             // 
             // button_plat_23
             // 
