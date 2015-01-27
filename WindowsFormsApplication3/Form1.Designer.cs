@@ -266,6 +266,8 @@
             this.tabControl.Controls.Add(this.tabPage2);
             this.tabControl.Controls.Add(this.tabPage3);
             this.tabControl.Enabled = false;
+            this.tabControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl.ItemSize = new System.Drawing.Size(900, 30);
             this.tabControl.Location = new System.Drawing.Point(14, 13);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
@@ -283,10 +285,11 @@
             this.tabPage4.Controls.Add(this.button_dessert_2);
             this.tabPage4.Controls.Add(this.numeric_dessert_1);
             this.tabPage4.Controls.Add(this.button_dessert_1);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage4.Location = new System.Drawing.Point(4, 34);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(850, 743);
+            this.tabPage4.Size = new System.Drawing.Size(850, 731);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Dessert";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -376,10 +379,11 @@
             this.tabPage1.Controls.Add(this.button_entree_2);
             this.tabPage1.Controls.Add(this.numeric_entree_1);
             this.tabPage1.Controls.Add(this.button_entree_1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage1.Location = new System.Drawing.Point(4, 44);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(850, 743);
+            this.tabPage1.Size = new System.Drawing.Size(850, 721);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Entrée";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -587,10 +591,11 @@
             this.tabPage2.Controls.Add(this.numeric_plat_1);
             this.tabPage2.Controls.Add(this.button_plat_1);
             this.tabPage2.Controls.Add(this.shapeContainer1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage2.Location = new System.Drawing.Point(4, 44);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(850, 743);
+            this.tabPage2.Size = new System.Drawing.Size(850, 721);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Plat";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -972,7 +977,7 @@
             this.lineShape3,
             this.lineShape1,
             this.lineShape2});
-            this.shapeContainer1.Size = new System.Drawing.Size(844, 737);
+            this.shapeContainer1.Size = new System.Drawing.Size(844, 715);
             this.shapeContainer1.TabIndex = 47;
             this.shapeContainer1.TabStop = false;
             // 
@@ -1039,10 +1044,11 @@
             this.tabPage3.Controls.Add(this.button_boisson_1);
             this.tabPage3.Controls.Add(this.numeric_boisson_1);
             this.tabPage3.Controls.Add(this.shapeContainer2);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage3.Location = new System.Drawing.Point(4, 44);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(850, 743);
+            this.tabPage3.Size = new System.Drawing.Size(850, 721);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Boisson";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -1342,7 +1348,7 @@
             this.shapeContainer2.Name = "shapeContainer2";
             this.shapeContainer2.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
             this.lineShape4});
-            this.shapeContainer2.Size = new System.Drawing.Size(844, 737);
+            this.shapeContainer2.Size = new System.Drawing.Size(844, 715);
             this.shapeContainer2.TabIndex = 38;
             this.shapeContainer2.TabStop = false;
             // 
