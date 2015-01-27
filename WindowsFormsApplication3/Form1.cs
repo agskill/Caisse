@@ -86,5 +86,35 @@ namespace WindowsFormsApplication3
         {
             MessageBox.Show(calc_recette().ToString("#,#.00#;(#,#.00#)") + " €", "Recette");
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numeric_dessert_1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numericUpDown3_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_entree_3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_entree_6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
