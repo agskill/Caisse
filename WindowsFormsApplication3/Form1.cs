@@ -153,7 +153,30 @@ namespace WindowsFormsApplication3
                    (double)numeric_plat_22.Value +
                    (double)numeric_plat_23.Value +
 
-                   (double)numeric_boisson_1.Value * 3.50;
+                   (double)numeric_boisson_1.Value * 3.50 +
+                   (double)numeric_boisson_2.Value * 3.50 +
+                   (double)numeric_boisson_3.Value * 2.50 +
+                   (double)numeric_boisson_4.Value * 1.90 +
+                   (double)numeric_boisson_5.Value * 2.50 +
+                   (double)numeric_boisson_6.Value * 2.90 +
+                   (double)numeric_boisson_7.Value * 2.50 +
+                   (double)numeric_boisson_8.Value * 4.50 +
+                   (double)numeric_boisson_9.Value * 7.00 +
+                   (double)numeric_boisson_10.Value * 13.9 +
+                   (double)numeric_boisson_11.Value * 9.90 +
+                   (double)numeric_boisson_12.Value * 14.9 +
+                   (double)numeric_boisson_13.Value * 9.90 +
+                   (double)numeric_boisson_14.Value * 9.90 +
+                   (double)numeric_boisson_15.Value * 14.9 +
+                   (double)numeric_boisson_16.Value * 9.20 +
+                   (double)numeric_boisson_17.Value * 13.5 +
+                   (double)numeric_boisson_18.Value * 11.9 +
+                   (double)numeric_boisson_19.Value * 3.50 +
+                   (double)numeric_boisson_20.Value * 7.90 +
+                   (double)numeric_boisson_21.Value * 11.5 +
+                   (double)numeric_boisson_22.Value * 32.0 +
+                   (double)numeric_boisson_23.Value * 20.0 
+                   ;
 
 
 
