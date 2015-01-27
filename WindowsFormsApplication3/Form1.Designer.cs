@@ -63,8 +63,6 @@
             this.numeric_entree_1 = new System.Windows.Forms.NumericUpDown();
             this.button_entree_1 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.numeric_plat_23 = new System.Windows.Forms.NumericUpDown();
-            this.numeric_plat_22 = new System.Windows.Forms.NumericUpDown();
             this.button_plat_23 = new System.Windows.Forms.Button();
             this.button_plat_22 = new System.Windows.Forms.Button();
             this.numeric_plat_21 = new System.Windows.Forms.NumericUpDown();
@@ -164,6 +162,11 @@
             this.lineShape4 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.button_calc = new System.Windows.Forms.Button();
             this.button_gotomain = new System.Windows.Forms.Button();
+
+            this.numeric_plat_22 = new System.Windows.Forms.TextBox();
+            this.numeric_plat_23 = new System.Windows.Forms.TextBox();
+            this.textBox_log = new System.Windows.Forms.TextBox();
+
             this.tabControl.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_dessert_4)).BeginInit();
@@ -181,8 +184,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numeric_entree_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_entree_1)).BeginInit();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numeric_plat_23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numeric_plat_22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_plat_21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_plat_20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_plat_19)).BeginInit();
@@ -618,22 +619,9 @@
             this.tabPage2.Text = "Plat";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // numeric_plat_23
-            // 
-            this.numeric_plat_23.Location = new System.Drawing.Point(480, 653);
-            this.numeric_plat_23.Name = "numeric_plat_23";
-            this.numeric_plat_23.Size = new System.Drawing.Size(120, 20);
-            this.numeric_plat_23.TabIndex = 46;
-            // 
-            // numeric_plat_22
-            // 
-            this.numeric_plat_22.Location = new System.Drawing.Point(480, 606);
-            this.numeric_plat_22.Name = "numeric_plat_22";
-            this.numeric_plat_22.Size = new System.Drawing.Size(120, 20);
-            this.numeric_plat_22.TabIndex = 45;
-            // 
             // button_plat_23
             // 
+            this.button_plat_23.Enabled = false;
             this.button_plat_23.Location = new System.Drawing.Point(301, 641);
             this.button_plat_23.Name = "button_plat_23";
             this.button_plat_23.Size = new System.Drawing.Size(173, 41);
@@ -643,6 +631,7 @@
             // 
             // button_plat_22
             // 
+            this.button_plat_22.Enabled = false;
             this.button_plat_22.Location = new System.Drawing.Point(301, 594);
             this.button_plat_22.Name = "button_plat_22";
             this.button_plat_22.Size = new System.Drawing.Size(173, 41);
@@ -1500,6 +1489,34 @@
             this.button_gotomain.Visible = false;
             this.button_gotomain.Click += new System.EventHandler(this.button_gotomain_Click);
             // 
+            // numeric_plat_22
+            // 
+            this.numeric_plat_22.Location = new System.Drawing.Point(480, 606);
+            this.numeric_plat_22.Name = "numeric_plat_22";
+            this.numeric_plat_22.Size = new System.Drawing.Size(153, 20);
+            this.numeric_plat_22.TabIndex = 48;
+
+            // 
+            // numeric_plat_23
+            // 
+            this.numeric_plat_23.Location = new System.Drawing.Point(480, 652);
+            this.numeric_plat_23.Name = "numeric_plat_23";
+            this.numeric_plat_23.Size = new System.Drawing.Size(153, 20);
+            this.numeric_plat_23.TabIndex = 49;
+ 
+            // 
+            // textBox_log
+            // 
+            this.textBox_log.Enabled = false;
+            this.textBox_log.Location = new System.Drawing.Point(18, 13);
+            this.textBox_log.Multiline = true;
+            this.textBox_log.Name = "textBox_log";
+            this.textBox_log.ReadOnly = true;
+            this.textBox_log.Size = new System.Drawing.Size(853, 769);
+            this.textBox_log.TabIndex = 7;
+            this.textBox_log.Visible = false;
+            // 
+
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1512,6 +1529,7 @@
             this.Controls.Add(this.Plus);
             this.Controls.Add(this.Sur_place);
             this.Controls.Add(this.Emporter);
+            this.Controls.Add(this.textBox_log);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Caisse";
@@ -1532,8 +1550,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numeric_entree_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_entree_1)).EndInit();
             this.tabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numeric_plat_23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numeric_plat_22)).EndInit();
+            this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_plat_21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_plat_20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_plat_19)).EndInit();
@@ -1580,6 +1597,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1664,8 +1682,6 @@
         private System.Windows.Forms.Button button_plat_2;
         private System.Windows.Forms.NumericUpDown numeric_plat_1;
         private System.Windows.Forms.Button button_plat_1;
-        private System.Windows.Forms.NumericUpDown numeric_plat_23;
-        private System.Windows.Forms.NumericUpDown numeric_plat_22;
         private System.Windows.Forms.Button button_plat_23;
         private System.Windows.Forms.Button button_plat_22;
         private System.Windows.Forms.Button button_boisson_15;
@@ -1720,6 +1736,9 @@
         private System.Windows.Forms.NumericUpDown numeric_boisson_23;
         private System.Windows.Forms.Button button_boisson_22;
         private System.Windows.Forms.NumericUpDown numeric_boisson_22;
+        private System.Windows.Forms.TextBox numeric_plat_23;
+        private System.Windows.Forms.TextBox numeric_plat_22;
+        private System.Windows.Forms.TextBox textBox_log;
     }
 }
 

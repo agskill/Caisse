@@ -150,8 +150,6 @@ namespace WindowsFormsApplication3
 
                    (double)numeric_plat_20.Value * 17.5 +
                    (double)numeric_plat_21.Value * 12.9 +
-                   (double)numeric_plat_22.Value +
-                   (double)numeric_plat_23.Value +
 
                    (double)numeric_boisson_1.Value * 3.50 +
                    (double)numeric_boisson_2.Value * 3.50 +
