@@ -173,6 +173,9 @@
             this.textBox_log = new System.Windows.Forms.TextBox();
             this.button_reset = new System.Windows.Forms.Button();
             this.button_raz = new System.Windows.Forms.Button();
+            this.label_prix = new System.Windows.Forms.Label();
+            this.numeric_entree_10 = new System.Windows.Forms.NumericUpDown();
+            this.button_entree_10 = new System.Windows.Forms.Button();
             this.tabControl.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_dessert_7)).BeginInit();
@@ -238,6 +241,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_entree_10)).BeginInit();
             this.SuspendLayout();
             // 
             // Emporter
@@ -267,7 +271,7 @@
             this.Plus.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Plus.Location = new System.Drawing.Point(13, 429);
             this.Plus.Name = "Plus";
-            this.Plus.Size = new System.Drawing.Size(859, 218);
+            this.Plus.Size = new System.Drawing.Size(859, 139);
             this.Plus.TabIndex = 2;
             this.Plus.Text = "Plus";
             this.Plus.UseVisualStyleBackColor = true;
@@ -276,9 +280,9 @@
             // Quitter
             // 
             this.Quitter.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Quitter.Location = new System.Drawing.Point(13, 717);
+            this.Quitter.Location = new System.Drawing.Point(12, 570);
             this.Quitter.Name = "Quitter";
-            this.Quitter.Size = new System.Drawing.Size(859, 132);
+            this.Quitter.Size = new System.Drawing.Size(859, 78);
             this.Quitter.TabIndex = 3;
             this.Quitter.Text = "Quitter";
             this.Quitter.UseVisualStyleBackColor = true;
@@ -296,7 +300,7 @@
             this.tabControl.Location = new System.Drawing.Point(14, 13);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(858, 769);
+            this.tabControl.Size = new System.Drawing.Size(858, 559);
             this.tabControl.TabIndex = 4;
             this.tabControl.Visible = false;
             // 
@@ -320,7 +324,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 34);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(850, 731);
+            this.tabPage4.Size = new System.Drawing.Size(850, 521);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Dessert";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -331,6 +335,7 @@
             this.numeric_dessert_7.Name = "numeric_dessert_7";
             this.numeric_dessert_7.Size = new System.Drawing.Size(32, 20);
             this.numeric_dessert_7.TabIndex = 15;
+            this.numeric_dessert_7.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_dessert_7
             // 
@@ -348,6 +353,7 @@
             this.numeric_dessert_6.Name = "numeric_dessert_6";
             this.numeric_dessert_6.Size = new System.Drawing.Size(32, 20);
             this.numeric_dessert_6.TabIndex = 13;
+            this.numeric_dessert_6.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_dessert_6
             // 
@@ -365,6 +371,7 @@
             this.numeric_dessert_5.Name = "numeric_dessert_5";
             this.numeric_dessert_5.Size = new System.Drawing.Size(32, 20);
             this.numeric_dessert_5.TabIndex = 11;
+            this.numeric_dessert_5.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_dessert_5
             // 
@@ -382,6 +389,7 @@
             this.numeric_dessert_4.Name = "numeric_dessert_4";
             this.numeric_dessert_4.Size = new System.Drawing.Size(32, 20);
             this.numeric_dessert_4.TabIndex = 9;
+            this.numeric_dessert_4.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_dessert_4
             // 
@@ -399,6 +407,7 @@
             this.numeric_dessert_3.Name = "numeric_dessert_3";
             this.numeric_dessert_3.Size = new System.Drawing.Size(32, 20);
             this.numeric_dessert_3.TabIndex = 7;
+            this.numeric_dessert_3.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_dessert_3
             // 
@@ -416,6 +425,7 @@
             this.numeric_dessert_2.Name = "numeric_dessert_2";
             this.numeric_dessert_2.Size = new System.Drawing.Size(32, 20);
             this.numeric_dessert_2.TabIndex = 5;
+            this.numeric_dessert_2.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_dessert_2
             // 
@@ -433,6 +443,7 @@
             this.numeric_dessert_1.Name = "numeric_dessert_1";
             this.numeric_dessert_1.Size = new System.Drawing.Size(32, 20);
             this.numeric_dessert_1.TabIndex = 3;
+            this.numeric_dessert_1.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_dessert_1
             // 
@@ -446,6 +457,8 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.numeric_entree_10);
+            this.tabPage1.Controls.Add(this.button_entree_10);
             this.tabPage1.Controls.Add(this.numeric_entree_9);
             this.tabPage1.Controls.Add(this.button_entree_9);
             this.tabPage1.Controls.Add(this.numeric_entree_8);
@@ -468,7 +481,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 34);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(850, 731);
+            this.tabPage1.Size = new System.Drawing.Size(850, 521);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Entrée";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -479,6 +492,7 @@
             this.numeric_entree_9.Name = "numeric_entree_9";
             this.numeric_entree_9.Size = new System.Drawing.Size(32, 20);
             this.numeric_entree_9.TabIndex = 17;
+            this.numeric_entree_9.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_entree_9
             // 
@@ -496,6 +510,7 @@
             this.numeric_entree_8.Name = "numeric_entree_8";
             this.numeric_entree_8.Size = new System.Drawing.Size(32, 20);
             this.numeric_entree_8.TabIndex = 15;
+            this.numeric_entree_8.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_entree_8
             // 
@@ -513,6 +528,7 @@
             this.numeric_entree_7.Name = "numeric_entree_7";
             this.numeric_entree_7.Size = new System.Drawing.Size(32, 20);
             this.numeric_entree_7.TabIndex = 13;
+            this.numeric_entree_7.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_entree_7
             // 
@@ -530,6 +546,7 @@
             this.numeric_entree_6.Name = "numeric_entree_6";
             this.numeric_entree_6.Size = new System.Drawing.Size(32, 20);
             this.numeric_entree_6.TabIndex = 11;
+            this.numeric_entree_6.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_entree_6
             // 
@@ -547,6 +564,7 @@
             this.numeric_entree_5.Name = "numeric_entree_5";
             this.numeric_entree_5.Size = new System.Drawing.Size(32, 20);
             this.numeric_entree_5.TabIndex = 9;
+            this.numeric_entree_5.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_entree_5
             // 
@@ -564,6 +582,7 @@
             this.numeric_entree_4.Name = "numeric_entree_4";
             this.numeric_entree_4.Size = new System.Drawing.Size(32, 20);
             this.numeric_entree_4.TabIndex = 7;
+            this.numeric_entree_4.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_entree_4
             // 
@@ -581,6 +600,7 @@
             this.numeric_entree_3.Name = "numeric_entree_3";
             this.numeric_entree_3.Size = new System.Drawing.Size(32, 20);
             this.numeric_entree_3.TabIndex = 5;
+            this.numeric_entree_3.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_entree_3
             // 
@@ -598,6 +618,7 @@
             this.numeric_entree_2.Name = "numeric_entree_2";
             this.numeric_entree_2.Size = new System.Drawing.Size(32, 20);
             this.numeric_entree_2.TabIndex = 3;
+            this.numeric_entree_2.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_entree_2
             // 
@@ -616,6 +637,7 @@
             this.numeric_entree_1.Name = "numeric_entree_1";
             this.numeric_entree_1.Size = new System.Drawing.Size(32, 20);
             this.numeric_entree_1.TabIndex = 1;
+            this.numeric_entree_1.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_entree_1
             // 
@@ -680,14 +702,14 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 34);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(850, 731);
+            this.tabPage2.Size = new System.Drawing.Size(850, 521);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Plat";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // numeric_plat_23
             // 
-            this.numeric_plat_23.Location = new System.Drawing.Point(480, 652);
+            this.numeric_plat_23.Location = new System.Drawing.Point(480, 478);
             this.numeric_plat_23.Name = "numeric_plat_23";
             this.numeric_plat_23.Size = new System.Drawing.Size(153, 20);
             this.numeric_plat_23.TabIndex = 49;
@@ -695,7 +717,7 @@
             // 
             // numeric_plat_22
             // 
-            this.numeric_plat_22.Location = new System.Drawing.Point(480, 606);
+            this.numeric_plat_22.Location = new System.Drawing.Point(480, 432);
             this.numeric_plat_22.Name = "numeric_plat_22";
             this.numeric_plat_22.Size = new System.Drawing.Size(153, 20);
             this.numeric_plat_22.TabIndex = 48;
@@ -704,7 +726,7 @@
             // button_plat_23
             // 
             this.button_plat_23.Enabled = false;
-            this.button_plat_23.Location = new System.Drawing.Point(301, 641);
+            this.button_plat_23.Location = new System.Drawing.Point(301, 467);
             this.button_plat_23.Name = "button_plat_23";
             this.button_plat_23.Size = new System.Drawing.Size(173, 41);
             this.button_plat_23.TabIndex = 44;
@@ -714,7 +736,7 @@
             // button_plat_22
             // 
             this.button_plat_22.Enabled = false;
-            this.button_plat_22.Location = new System.Drawing.Point(301, 594);
+            this.button_plat_22.Location = new System.Drawing.Point(301, 420);
             this.button_plat_22.Name = "button_plat_22";
             this.button_plat_22.Size = new System.Drawing.Size(173, 41);
             this.button_plat_22.TabIndex = 42;
@@ -723,14 +745,15 @@
             // 
             // numeric_plat_21
             // 
-            this.numeric_plat_21.Location = new System.Drawing.Point(480, 418);
+            this.numeric_plat_21.Location = new System.Drawing.Point(776, 65);
             this.numeric_plat_21.Name = "numeric_plat_21";
             this.numeric_plat_21.Size = new System.Drawing.Size(59, 20);
             this.numeric_plat_21.TabIndex = 41;
+            this.numeric_plat_21.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_plat_21
             // 
-            this.button_plat_21.Location = new System.Drawing.Point(301, 406);
+            this.button_plat_21.Location = new System.Drawing.Point(597, 53);
             this.button_plat_21.Name = "button_plat_21";
             this.button_plat_21.Size = new System.Drawing.Size(173, 41);
             this.button_plat_21.TabIndex = 40;
@@ -740,14 +763,15 @@
             // 
             // numeric_plat_20
             // 
-            this.numeric_plat_20.Location = new System.Drawing.Point(480, 371);
+            this.numeric_plat_20.Location = new System.Drawing.Point(776, 18);
             this.numeric_plat_20.Name = "numeric_plat_20";
             this.numeric_plat_20.Size = new System.Drawing.Size(59, 20);
             this.numeric_plat_20.TabIndex = 39;
+            this.numeric_plat_20.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_plat_20
             // 
-            this.button_plat_20.Location = new System.Drawing.Point(301, 359);
+            this.button_plat_20.Location = new System.Drawing.Point(597, 6);
             this.button_plat_20.Name = "button_plat_20";
             this.button_plat_20.Size = new System.Drawing.Size(173, 41);
             this.button_plat_20.TabIndex = 38;
@@ -757,14 +781,15 @@
             // 
             // numeric_plat_19
             // 
-            this.numeric_plat_19.Location = new System.Drawing.Point(480, 230);
+            this.numeric_plat_19.Location = new System.Drawing.Point(480, 347);
             this.numeric_plat_19.Name = "numeric_plat_19";
             this.numeric_plat_19.Size = new System.Drawing.Size(59, 20);
             this.numeric_plat_19.TabIndex = 37;
+            this.numeric_plat_19.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_plat_19
             // 
-            this.button_plat_19.Location = new System.Drawing.Point(301, 218);
+            this.button_plat_19.Location = new System.Drawing.Point(301, 335);
             this.button_plat_19.Name = "button_plat_19";
             this.button_plat_19.Size = new System.Drawing.Size(173, 41);
             this.button_plat_19.TabIndex = 36;
@@ -774,14 +799,15 @@
             // 
             // numeric_plat_18
             // 
-            this.numeric_plat_18.Location = new System.Drawing.Point(480, 183);
+            this.numeric_plat_18.Location = new System.Drawing.Point(480, 300);
             this.numeric_plat_18.Name = "numeric_plat_18";
             this.numeric_plat_18.Size = new System.Drawing.Size(59, 20);
             this.numeric_plat_18.TabIndex = 35;
+            this.numeric_plat_18.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_plat_18
             // 
-            this.button_plat_18.Location = new System.Drawing.Point(301, 171);
+            this.button_plat_18.Location = new System.Drawing.Point(301, 288);
             this.button_plat_18.Name = "button_plat_18";
             this.button_plat_18.Size = new System.Drawing.Size(173, 41);
             this.button_plat_18.TabIndex = 34;
@@ -791,14 +817,15 @@
             // 
             // numeric_plat_17
             // 
-            this.numeric_plat_17.Location = new System.Drawing.Point(480, 136);
+            this.numeric_plat_17.Location = new System.Drawing.Point(480, 253);
             this.numeric_plat_17.Name = "numeric_plat_17";
             this.numeric_plat_17.Size = new System.Drawing.Size(59, 20);
             this.numeric_plat_17.TabIndex = 33;
+            this.numeric_plat_17.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_plat_17
             // 
-            this.button_plat_17.Location = new System.Drawing.Point(301, 124);
+            this.button_plat_17.Location = new System.Drawing.Point(301, 241);
             this.button_plat_17.Name = "button_plat_17";
             this.button_plat_17.Size = new System.Drawing.Size(173, 41);
             this.button_plat_17.TabIndex = 32;
@@ -808,14 +835,15 @@
             // 
             // numeric_plat_16
             // 
-            this.numeric_plat_16.Location = new System.Drawing.Point(480, 89);
+            this.numeric_plat_16.Location = new System.Drawing.Point(480, 206);
             this.numeric_plat_16.Name = "numeric_plat_16";
             this.numeric_plat_16.Size = new System.Drawing.Size(59, 20);
             this.numeric_plat_16.TabIndex = 31;
+            this.numeric_plat_16.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_plat_16
             // 
-            this.button_plat_16.Location = new System.Drawing.Point(301, 77);
+            this.button_plat_16.Location = new System.Drawing.Point(301, 194);
             this.button_plat_16.Name = "button_plat_16";
             this.button_plat_16.Size = new System.Drawing.Size(173, 41);
             this.button_plat_16.TabIndex = 30;
@@ -825,14 +853,15 @@
             // 
             // numeric_plat_15
             // 
-            this.numeric_plat_15.Location = new System.Drawing.Point(480, 42);
+            this.numeric_plat_15.Location = new System.Drawing.Point(480, 159);
             this.numeric_plat_15.Name = "numeric_plat_15";
             this.numeric_plat_15.Size = new System.Drawing.Size(59, 20);
             this.numeric_plat_15.TabIndex = 29;
+            this.numeric_plat_15.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_plat_15
             // 
-            this.button_plat_15.Location = new System.Drawing.Point(301, 30);
+            this.button_plat_15.Location = new System.Drawing.Point(301, 147);
             this.button_plat_15.Name = "button_plat_15";
             this.button_plat_15.Size = new System.Drawing.Size(173, 41);
             this.button_plat_15.TabIndex = 28;
@@ -842,14 +871,15 @@
             // 
             // numeric_plat_14
             // 
-            this.numeric_plat_14.Location = new System.Drawing.Point(185, 653);
+            this.numeric_plat_14.Location = new System.Drawing.Point(480, 112);
             this.numeric_plat_14.Name = "numeric_plat_14";
             this.numeric_plat_14.Size = new System.Drawing.Size(59, 20);
             this.numeric_plat_14.TabIndex = 27;
+            this.numeric_plat_14.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_plat_14
             // 
-            this.button_plat_14.Location = new System.Drawing.Point(6, 641);
+            this.button_plat_14.Location = new System.Drawing.Point(301, 100);
             this.button_plat_14.Name = "button_plat_14";
             this.button_plat_14.Size = new System.Drawing.Size(173, 41);
             this.button_plat_14.TabIndex = 26;
@@ -859,14 +889,15 @@
             // 
             // numeric_plat_13
             // 
-            this.numeric_plat_13.Location = new System.Drawing.Point(185, 606);
+            this.numeric_plat_13.Location = new System.Drawing.Point(480, 65);
             this.numeric_plat_13.Name = "numeric_plat_13";
             this.numeric_plat_13.Size = new System.Drawing.Size(59, 20);
             this.numeric_plat_13.TabIndex = 25;
+            this.numeric_plat_13.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_plat_13
             // 
-            this.button_plat_13.Location = new System.Drawing.Point(6, 594);
+            this.button_plat_13.Location = new System.Drawing.Point(301, 53);
             this.button_plat_13.Name = "button_plat_13";
             this.button_plat_13.Size = new System.Drawing.Size(173, 41);
             this.button_plat_13.TabIndex = 24;
@@ -876,14 +907,15 @@
             // 
             // numeric_plat_12
             // 
-            this.numeric_plat_12.Location = new System.Drawing.Point(185, 559);
+            this.numeric_plat_12.Location = new System.Drawing.Point(480, 18);
             this.numeric_plat_12.Name = "numeric_plat_12";
             this.numeric_plat_12.Size = new System.Drawing.Size(59, 20);
             this.numeric_plat_12.TabIndex = 23;
+            this.numeric_plat_12.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_plat_12
             // 
-            this.button_plat_12.Location = new System.Drawing.Point(6, 547);
+            this.button_plat_12.Location = new System.Drawing.Point(301, 6);
             this.button_plat_12.Name = "button_plat_12";
             this.button_plat_12.Size = new System.Drawing.Size(173, 41);
             this.button_plat_12.TabIndex = 22;
@@ -893,14 +925,15 @@
             // 
             // numeric_plat_11
             // 
-            this.numeric_plat_11.Location = new System.Drawing.Point(185, 512);
+            this.numeric_plat_11.Location = new System.Drawing.Point(185, 488);
             this.numeric_plat_11.Name = "numeric_plat_11";
             this.numeric_plat_11.Size = new System.Drawing.Size(59, 20);
             this.numeric_plat_11.TabIndex = 21;
+            this.numeric_plat_11.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_plat_11
             // 
-            this.button_plat_11.Location = new System.Drawing.Point(6, 500);
+            this.button_plat_11.Location = new System.Drawing.Point(6, 476);
             this.button_plat_11.Name = "button_plat_11";
             this.button_plat_11.Size = new System.Drawing.Size(173, 41);
             this.button_plat_11.TabIndex = 20;
@@ -910,14 +943,15 @@
             // 
             // numeric_plat_10
             // 
-            this.numeric_plat_10.Location = new System.Drawing.Point(185, 465);
+            this.numeric_plat_10.Location = new System.Drawing.Point(185, 441);
             this.numeric_plat_10.Name = "numeric_plat_10";
             this.numeric_plat_10.Size = new System.Drawing.Size(59, 20);
             this.numeric_plat_10.TabIndex = 19;
+            this.numeric_plat_10.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_plat_10
             // 
-            this.button_plat_10.Location = new System.Drawing.Point(6, 453);
+            this.button_plat_10.Location = new System.Drawing.Point(6, 429);
             this.button_plat_10.Name = "button_plat_10";
             this.button_plat_10.Size = new System.Drawing.Size(173, 41);
             this.button_plat_10.TabIndex = 18;
@@ -927,14 +961,15 @@
             // 
             // numeric_plat_9
             // 
-            this.numeric_plat_9.Location = new System.Drawing.Point(185, 418);
+            this.numeric_plat_9.Location = new System.Drawing.Point(185, 394);
             this.numeric_plat_9.Name = "numeric_plat_9";
             this.numeric_plat_9.Size = new System.Drawing.Size(59, 20);
             this.numeric_plat_9.TabIndex = 17;
+            this.numeric_plat_9.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_plat_9
             // 
-            this.button_plat_9.Location = new System.Drawing.Point(6, 406);
+            this.button_plat_9.Location = new System.Drawing.Point(6, 382);
             this.button_plat_9.Name = "button_plat_9";
             this.button_plat_9.Size = new System.Drawing.Size(173, 41);
             this.button_plat_9.TabIndex = 16;
@@ -944,14 +979,15 @@
             // 
             // numeric_plat_8
             // 
-            this.numeric_plat_8.Location = new System.Drawing.Point(185, 371);
+            this.numeric_plat_8.Location = new System.Drawing.Point(185, 347);
             this.numeric_plat_8.Name = "numeric_plat_8";
             this.numeric_plat_8.Size = new System.Drawing.Size(59, 20);
             this.numeric_plat_8.TabIndex = 15;
+            this.numeric_plat_8.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_plat_8
             // 
-            this.button_plat_8.Location = new System.Drawing.Point(6, 359);
+            this.button_plat_8.Location = new System.Drawing.Point(6, 335);
             this.button_plat_8.Name = "button_plat_8";
             this.button_plat_8.Size = new System.Drawing.Size(173, 41);
             this.button_plat_8.TabIndex = 14;
@@ -961,14 +997,15 @@
             // 
             // numeric_plat_7
             // 
-            this.numeric_plat_7.Location = new System.Drawing.Point(185, 324);
+            this.numeric_plat_7.Location = new System.Drawing.Point(185, 300);
             this.numeric_plat_7.Name = "numeric_plat_7";
             this.numeric_plat_7.Size = new System.Drawing.Size(59, 20);
             this.numeric_plat_7.TabIndex = 13;
+            this.numeric_plat_7.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_plat_7
             // 
-            this.button_plat_7.Location = new System.Drawing.Point(6, 312);
+            this.button_plat_7.Location = new System.Drawing.Point(6, 288);
             this.button_plat_7.Name = "button_plat_7";
             this.button_plat_7.Size = new System.Drawing.Size(173, 41);
             this.button_plat_7.TabIndex = 12;
@@ -978,14 +1015,15 @@
             // 
             // numeric_plat_6
             // 
-            this.numeric_plat_6.Location = new System.Drawing.Point(185, 277);
+            this.numeric_plat_6.Location = new System.Drawing.Point(185, 253);
             this.numeric_plat_6.Name = "numeric_plat_6";
             this.numeric_plat_6.Size = new System.Drawing.Size(59, 20);
             this.numeric_plat_6.TabIndex = 11;
+            this.numeric_plat_6.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_plat_6
             // 
-            this.button_plat_6.Location = new System.Drawing.Point(6, 265);
+            this.button_plat_6.Location = new System.Drawing.Point(6, 241);
             this.button_plat_6.Name = "button_plat_6";
             this.button_plat_6.Size = new System.Drawing.Size(173, 41);
             this.button_plat_6.TabIndex = 10;
@@ -995,14 +1033,15 @@
             // 
             // numeric_plat_5
             // 
-            this.numeric_plat_5.Location = new System.Drawing.Point(185, 230);
+            this.numeric_plat_5.Location = new System.Drawing.Point(185, 206);
             this.numeric_plat_5.Name = "numeric_plat_5";
             this.numeric_plat_5.Size = new System.Drawing.Size(59, 20);
             this.numeric_plat_5.TabIndex = 9;
+            this.numeric_plat_5.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_plat_5
             // 
-            this.button_plat_5.Location = new System.Drawing.Point(6, 218);
+            this.button_plat_5.Location = new System.Drawing.Point(6, 194);
             this.button_plat_5.Name = "button_plat_5";
             this.button_plat_5.Size = new System.Drawing.Size(173, 41);
             this.button_plat_5.TabIndex = 8;
@@ -1012,14 +1051,15 @@
             // 
             // numeric_plat_4
             // 
-            this.numeric_plat_4.Location = new System.Drawing.Point(185, 183);
+            this.numeric_plat_4.Location = new System.Drawing.Point(185, 159);
             this.numeric_plat_4.Name = "numeric_plat_4";
             this.numeric_plat_4.Size = new System.Drawing.Size(59, 20);
             this.numeric_plat_4.TabIndex = 7;
+            this.numeric_plat_4.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_plat_4
             // 
-            this.button_plat_4.Location = new System.Drawing.Point(6, 171);
+            this.button_plat_4.Location = new System.Drawing.Point(6, 147);
             this.button_plat_4.Name = "button_plat_4";
             this.button_plat_4.Size = new System.Drawing.Size(173, 41);
             this.button_plat_4.TabIndex = 6;
@@ -1029,14 +1069,15 @@
             // 
             // numeric_plat_3
             // 
-            this.numeric_plat_3.Location = new System.Drawing.Point(185, 136);
+            this.numeric_plat_3.Location = new System.Drawing.Point(185, 112);
             this.numeric_plat_3.Name = "numeric_plat_3";
             this.numeric_plat_3.Size = new System.Drawing.Size(59, 20);
             this.numeric_plat_3.TabIndex = 5;
+            this.numeric_plat_3.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_plat_3
             // 
-            this.button_plat_3.Location = new System.Drawing.Point(6, 124);
+            this.button_plat_3.Location = new System.Drawing.Point(6, 100);
             this.button_plat_3.Name = "button_plat_3";
             this.button_plat_3.Size = new System.Drawing.Size(173, 41);
             this.button_plat_3.TabIndex = 4;
@@ -1046,14 +1087,15 @@
             // 
             // numeric_plat_2
             // 
-            this.numeric_plat_2.Location = new System.Drawing.Point(185, 89);
+            this.numeric_plat_2.Location = new System.Drawing.Point(185, 65);
             this.numeric_plat_2.Name = "numeric_plat_2";
             this.numeric_plat_2.Size = new System.Drawing.Size(59, 20);
             this.numeric_plat_2.TabIndex = 3;
+            this.numeric_plat_2.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_plat_2
             // 
-            this.button_plat_2.Location = new System.Drawing.Point(6, 77);
+            this.button_plat_2.Location = new System.Drawing.Point(6, 53);
             this.button_plat_2.Name = "button_plat_2";
             this.button_plat_2.Size = new System.Drawing.Size(173, 41);
             this.button_plat_2.TabIndex = 2;
@@ -1063,14 +1105,15 @@
             // 
             // numeric_plat_1
             // 
-            this.numeric_plat_1.Location = new System.Drawing.Point(185, 42);
+            this.numeric_plat_1.Location = new System.Drawing.Point(185, 18);
             this.numeric_plat_1.Name = "numeric_plat_1";
             this.numeric_plat_1.Size = new System.Drawing.Size(59, 20);
             this.numeric_plat_1.TabIndex = 1;
+            this.numeric_plat_1.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_plat_1
             // 
-            this.button_plat_1.Location = new System.Drawing.Point(6, 30);
+            this.button_plat_1.Location = new System.Drawing.Point(6, 6);
             this.button_plat_1.Name = "button_plat_1";
             this.button_plat_1.Size = new System.Drawing.Size(173, 41);
             this.button_plat_1.TabIndex = 0;
@@ -1087,7 +1130,7 @@
             this.lineShape3,
             this.lineShape1,
             this.lineShape2});
-            this.shapeContainer1.Size = new System.Drawing.Size(844, 725);
+            this.shapeContainer1.Size = new System.Drawing.Size(844, 515);
             this.shapeContainer1.TabIndex = 47;
             this.shapeContainer1.TabStop = false;
             // 
@@ -1168,14 +1211,14 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 34);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(850, 731);
+            this.tabPage3.Size = new System.Drawing.Size(850, 521);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Boisson";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // button_boisson_23
             // 
-            this.button_boisson_23.Location = new System.Drawing.Point(9, 662);
+            this.button_boisson_23.Location = new System.Drawing.Point(500, 454);
             this.button_boisson_23.Name = "button_boisson_23";
             this.button_boisson_23.Size = new System.Drawing.Size(153, 39);
             this.button_boisson_23.TabIndex = 48;
@@ -1185,14 +1228,15 @@
             // 
             // numeric_boisson_23
             // 
-            this.numeric_boisson_23.Location = new System.Drawing.Point(168, 673);
+            this.numeric_boisson_23.Location = new System.Drawing.Point(659, 465);
             this.numeric_boisson_23.Name = "numeric_boisson_23";
             this.numeric_boisson_23.Size = new System.Drawing.Size(43, 20);
             this.numeric_boisson_23.TabIndex = 47;
+            this.numeric_boisson_23.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_boisson_22
             // 
-            this.button_boisson_22.Location = new System.Drawing.Point(9, 617);
+            this.button_boisson_22.Location = new System.Drawing.Point(500, 409);
             this.button_boisson_22.Name = "button_boisson_22";
             this.button_boisson_22.Size = new System.Drawing.Size(153, 39);
             this.button_boisson_22.TabIndex = 46;
@@ -1202,14 +1246,15 @@
             // 
             // numeric_boisson_22
             // 
-            this.numeric_boisson_22.Location = new System.Drawing.Point(168, 628);
+            this.numeric_boisson_22.Location = new System.Drawing.Point(659, 420);
             this.numeric_boisson_22.Name = "numeric_boisson_22";
             this.numeric_boisson_22.Size = new System.Drawing.Size(43, 20);
             this.numeric_boisson_22.TabIndex = 45;
+            this.numeric_boisson_22.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_boisson_21
             // 
-            this.button_boisson_21.Location = new System.Drawing.Point(9, 452);
+            this.button_boisson_21.Location = new System.Drawing.Point(9, 417);
             this.button_boisson_21.Name = "button_boisson_21";
             this.button_boisson_21.Size = new System.Drawing.Size(153, 39);
             this.button_boisson_21.TabIndex = 44;
@@ -1219,14 +1264,15 @@
             // 
             // numeric_boisson_21
             // 
-            this.numeric_boisson_21.Location = new System.Drawing.Point(168, 463);
+            this.numeric_boisson_21.Location = new System.Drawing.Point(168, 428);
             this.numeric_boisson_21.Name = "numeric_boisson_21";
             this.numeric_boisson_21.Size = new System.Drawing.Size(43, 20);
             this.numeric_boisson_21.TabIndex = 43;
+            this.numeric_boisson_21.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_boisson_20
             // 
-            this.button_boisson_20.Location = new System.Drawing.Point(9, 407);
+            this.button_boisson_20.Location = new System.Drawing.Point(9, 372);
             this.button_boisson_20.Name = "button_boisson_20";
             this.button_boisson_20.Size = new System.Drawing.Size(153, 39);
             this.button_boisson_20.TabIndex = 42;
@@ -1236,10 +1282,11 @@
             // 
             // numeric_boisson_20
             // 
-            this.numeric_boisson_20.Location = new System.Drawing.Point(168, 418);
+            this.numeric_boisson_20.Location = new System.Drawing.Point(168, 383);
             this.numeric_boisson_20.Name = "numeric_boisson_20";
             this.numeric_boisson_20.Size = new System.Drawing.Size(43, 20);
             this.numeric_boisson_20.TabIndex = 41;
+            this.numeric_boisson_20.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_boisson_19
             // 
@@ -1257,10 +1304,11 @@
             this.numeric_boisson_19.Name = "numeric_boisson_19";
             this.numeric_boisson_19.Size = new System.Drawing.Size(43, 20);
             this.numeric_boisson_19.TabIndex = 39;
+            this.numeric_boisson_19.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_boisson_18
             // 
-            this.button_boisson_18.Location = new System.Drawing.Point(500, 363);
+            this.button_boisson_18.Location = new System.Drawing.Point(500, 328);
             this.button_boisson_18.Name = "button_boisson_18";
             this.button_boisson_18.Size = new System.Drawing.Size(153, 39);
             this.button_boisson_18.TabIndex = 37;
@@ -1270,14 +1318,15 @@
             // 
             // numeric_boisson_18
             // 
-            this.numeric_boisson_18.Location = new System.Drawing.Point(659, 374);
+            this.numeric_boisson_18.Location = new System.Drawing.Point(659, 339);
             this.numeric_boisson_18.Name = "numeric_boisson_18";
             this.numeric_boisson_18.Size = new System.Drawing.Size(43, 20);
             this.numeric_boisson_18.TabIndex = 36;
+            this.numeric_boisson_18.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_boisson_17
             // 
-            this.button_boisson_17.Location = new System.Drawing.Point(258, 273);
+            this.button_boisson_17.Location = new System.Drawing.Point(258, 238);
             this.button_boisson_17.Name = "button_boisson_17";
             this.button_boisson_17.Size = new System.Drawing.Size(153, 39);
             this.button_boisson_17.TabIndex = 33;
@@ -1287,14 +1336,15 @@
             // 
             // numeric_boisson_17
             // 
-            this.numeric_boisson_17.Location = new System.Drawing.Point(417, 284);
+            this.numeric_boisson_17.Location = new System.Drawing.Point(417, 249);
             this.numeric_boisson_17.Name = "numeric_boisson_17";
             this.numeric_boisson_17.Size = new System.Drawing.Size(43, 20);
             this.numeric_boisson_17.TabIndex = 32;
+            this.numeric_boisson_17.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_boisson_16
             // 
-            this.button_boisson_16.Location = new System.Drawing.Point(258, 228);
+            this.button_boisson_16.Location = new System.Drawing.Point(258, 193);
             this.button_boisson_16.Name = "button_boisson_16";
             this.button_boisson_16.Size = new System.Drawing.Size(153, 39);
             this.button_boisson_16.TabIndex = 31;
@@ -1304,14 +1354,15 @@
             // 
             // numeric_boisson_16
             // 
-            this.numeric_boisson_16.Location = new System.Drawing.Point(417, 239);
+            this.numeric_boisson_16.Location = new System.Drawing.Point(417, 204);
             this.numeric_boisson_16.Name = "numeric_boisson_16";
             this.numeric_boisson_16.Size = new System.Drawing.Size(43, 20);
             this.numeric_boisson_16.TabIndex = 30;
+            this.numeric_boisson_16.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_boisson_15
             // 
-            this.button_boisson_15.Location = new System.Drawing.Point(9, 363);
+            this.button_boisson_15.Location = new System.Drawing.Point(9, 328);
             this.button_boisson_15.Name = "button_boisson_15";
             this.button_boisson_15.Size = new System.Drawing.Size(153, 39);
             this.button_boisson_15.TabIndex = 29;
@@ -1321,14 +1372,15 @@
             // 
             // numeric_boisson_15
             // 
-            this.numeric_boisson_15.Location = new System.Drawing.Point(168, 374);
+            this.numeric_boisson_15.Location = new System.Drawing.Point(168, 339);
             this.numeric_boisson_15.Name = "numeric_boisson_15";
             this.numeric_boisson_15.Size = new System.Drawing.Size(43, 20);
             this.numeric_boisson_15.TabIndex = 28;
+            this.numeric_boisson_15.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_boisson_14
             // 
-            this.button_boisson_14.Location = new System.Drawing.Point(9, 318);
+            this.button_boisson_14.Location = new System.Drawing.Point(9, 283);
             this.button_boisson_14.Name = "button_boisson_14";
             this.button_boisson_14.Size = new System.Drawing.Size(153, 39);
             this.button_boisson_14.TabIndex = 27;
@@ -1338,14 +1390,15 @@
             // 
             // numeric_boisson_14
             // 
-            this.numeric_boisson_14.Location = new System.Drawing.Point(168, 329);
+            this.numeric_boisson_14.Location = new System.Drawing.Point(168, 294);
             this.numeric_boisson_14.Name = "numeric_boisson_14";
             this.numeric_boisson_14.Size = new System.Drawing.Size(43, 20);
             this.numeric_boisson_14.TabIndex = 26;
+            this.numeric_boisson_14.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_boisson_13
             // 
-            this.button_boisson_13.Location = new System.Drawing.Point(258, 363);
+            this.button_boisson_13.Location = new System.Drawing.Point(258, 328);
             this.button_boisson_13.Name = "button_boisson_13";
             this.button_boisson_13.Size = new System.Drawing.Size(153, 39);
             this.button_boisson_13.TabIndex = 25;
@@ -1355,14 +1408,15 @@
             // 
             // numeric_boisson_13
             // 
-            this.numeric_boisson_13.Location = new System.Drawing.Point(417, 374);
+            this.numeric_boisson_13.Location = new System.Drawing.Point(417, 339);
             this.numeric_boisson_13.Name = "numeric_boisson_13";
             this.numeric_boisson_13.Size = new System.Drawing.Size(43, 20);
             this.numeric_boisson_13.TabIndex = 24;
+            this.numeric_boisson_13.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_boisson_12
             // 
-            this.button_boisson_12.Location = new System.Drawing.Point(258, 318);
+            this.button_boisson_12.Location = new System.Drawing.Point(258, 283);
             this.button_boisson_12.Name = "button_boisson_12";
             this.button_boisson_12.Size = new System.Drawing.Size(153, 39);
             this.button_boisson_12.TabIndex = 23;
@@ -1372,14 +1426,15 @@
             // 
             // numeric_boisson_12
             // 
-            this.numeric_boisson_12.Location = new System.Drawing.Point(417, 329);
+            this.numeric_boisson_12.Location = new System.Drawing.Point(417, 294);
             this.numeric_boisson_12.Name = "numeric_boisson_12";
             this.numeric_boisson_12.Size = new System.Drawing.Size(43, 20);
             this.numeric_boisson_12.TabIndex = 22;
+            this.numeric_boisson_12.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_boisson_11
             // 
-            this.button_boisson_11.Location = new System.Drawing.Point(9, 273);
+            this.button_boisson_11.Location = new System.Drawing.Point(9, 238);
             this.button_boisson_11.Name = "button_boisson_11";
             this.button_boisson_11.Size = new System.Drawing.Size(153, 39);
             this.button_boisson_11.TabIndex = 21;
@@ -1389,14 +1444,15 @@
             // 
             // numeric_boisson_11
             // 
-            this.numeric_boisson_11.Location = new System.Drawing.Point(168, 284);
+            this.numeric_boisson_11.Location = new System.Drawing.Point(168, 249);
             this.numeric_boisson_11.Name = "numeric_boisson_11";
             this.numeric_boisson_11.Size = new System.Drawing.Size(43, 20);
             this.numeric_boisson_11.TabIndex = 20;
+            this.numeric_boisson_11.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_boisson_10
             // 
-            this.button_boisson_10.Location = new System.Drawing.Point(9, 228);
+            this.button_boisson_10.Location = new System.Drawing.Point(9, 193);
             this.button_boisson_10.Name = "button_boisson_10";
             this.button_boisson_10.Size = new System.Drawing.Size(153, 39);
             this.button_boisson_10.TabIndex = 19;
@@ -1406,14 +1462,15 @@
             // 
             // numeric_boisson_10
             // 
-            this.numeric_boisson_10.Location = new System.Drawing.Point(168, 239);
+            this.numeric_boisson_10.Location = new System.Drawing.Point(168, 204);
             this.numeric_boisson_10.Name = "numeric_boisson_10";
             this.numeric_boisson_10.Size = new System.Drawing.Size(43, 20);
             this.numeric_boisson_10.TabIndex = 18;
+            this.numeric_boisson_10.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_boisson_9
             // 
-            this.button_boisson_9.Location = new System.Drawing.Point(500, 318);
+            this.button_boisson_9.Location = new System.Drawing.Point(500, 283);
             this.button_boisson_9.Name = "button_boisson_9";
             this.button_boisson_9.Size = new System.Drawing.Size(153, 39);
             this.button_boisson_9.TabIndex = 17;
@@ -1423,14 +1480,15 @@
             // 
             // numeric_boisson_9
             // 
-            this.numeric_boisson_9.Location = new System.Drawing.Point(659, 329);
+            this.numeric_boisson_9.Location = new System.Drawing.Point(659, 294);
             this.numeric_boisson_9.Name = "numeric_boisson_9";
             this.numeric_boisson_9.Size = new System.Drawing.Size(43, 20);
             this.numeric_boisson_9.TabIndex = 16;
+            this.numeric_boisson_9.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_boisson_8
             // 
-            this.button_boisson_8.Location = new System.Drawing.Point(500, 273);
+            this.button_boisson_8.Location = new System.Drawing.Point(500, 238);
             this.button_boisson_8.Name = "button_boisson_8";
             this.button_boisson_8.Size = new System.Drawing.Size(153, 39);
             this.button_boisson_8.TabIndex = 15;
@@ -1440,14 +1498,15 @@
             // 
             // numeric_boisson_8
             // 
-            this.numeric_boisson_8.Location = new System.Drawing.Point(659, 284);
+            this.numeric_boisson_8.Location = new System.Drawing.Point(659, 249);
             this.numeric_boisson_8.Name = "numeric_boisson_8";
             this.numeric_boisson_8.Size = new System.Drawing.Size(43, 20);
             this.numeric_boisson_8.TabIndex = 14;
+            this.numeric_boisson_8.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_boisson_7
             // 
-            this.button_boisson_7.Location = new System.Drawing.Point(500, 228);
+            this.button_boisson_7.Location = new System.Drawing.Point(500, 193);
             this.button_boisson_7.Name = "button_boisson_7";
             this.button_boisson_7.Size = new System.Drawing.Size(153, 39);
             this.button_boisson_7.TabIndex = 13;
@@ -1457,10 +1516,11 @@
             // 
             // numeric_boisson_7
             // 
-            this.numeric_boisson_7.Location = new System.Drawing.Point(659, 239);
+            this.numeric_boisson_7.Location = new System.Drawing.Point(659, 204);
             this.numeric_boisson_7.Name = "numeric_boisson_7";
             this.numeric_boisson_7.Size = new System.Drawing.Size(43, 20);
             this.numeric_boisson_7.TabIndex = 12;
+            this.numeric_boisson_7.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_boisson_6
             // 
@@ -1478,6 +1538,7 @@
             this.numeric_boisson_6.Name = "numeric_boisson_6";
             this.numeric_boisson_6.Size = new System.Drawing.Size(43, 20);
             this.numeric_boisson_6.TabIndex = 10;
+            this.numeric_boisson_6.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_boisson_5
             // 
@@ -1495,6 +1556,7 @@
             this.numeric_boisson_5.Name = "numeric_boisson_5";
             this.numeric_boisson_5.Size = new System.Drawing.Size(43, 20);
             this.numeric_boisson_5.TabIndex = 8;
+            this.numeric_boisson_5.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_boisson_4
             // 
@@ -1512,6 +1574,7 @@
             this.numeric_boisson_4.Name = "numeric_boisson_4";
             this.numeric_boisson_4.Size = new System.Drawing.Size(43, 20);
             this.numeric_boisson_4.TabIndex = 6;
+            this.numeric_boisson_4.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_boisson_3
             // 
@@ -1529,6 +1592,7 @@
             this.numeric_boisson_3.Name = "numeric_boisson_3";
             this.numeric_boisson_3.Size = new System.Drawing.Size(43, 20);
             this.numeric_boisson_3.TabIndex = 4;
+            this.numeric_boisson_3.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_boisson_2
             // 
@@ -1546,6 +1610,7 @@
             this.numeric_boisson_2.Name = "numeric_boisson_2";
             this.numeric_boisson_2.Size = new System.Drawing.Size(43, 20);
             this.numeric_boisson_2.TabIndex = 2;
+            this.numeric_boisson_2.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // button_boisson_1
             // 
@@ -1563,6 +1628,7 @@
             this.numeric_boisson_1.Name = "numeric_boisson_1";
             this.numeric_boisson_1.Size = new System.Drawing.Size(43, 20);
             this.numeric_boisson_1.TabIndex = 0;
+            this.numeric_boisson_1.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
             // 
             // shapeContainer2
             // 
@@ -1571,7 +1637,7 @@
             this.shapeContainer2.Name = "shapeContainer2";
             this.shapeContainer2.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
             this.lineShape4});
-            this.shapeContainer2.Size = new System.Drawing.Size(844, 725);
+            this.shapeContainer2.Size = new System.Drawing.Size(844, 515);
             this.shapeContainer2.TabIndex = 38;
             this.shapeContainer2.TabStop = false;
             // 
@@ -1588,11 +1654,11 @@
             this.button_calc.Enabled = false;
             this.button_calc.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_calc.ForeColor = System.Drawing.Color.Green;
-            this.button_calc.Location = new System.Drawing.Point(18, 788);
+            this.button_calc.Location = new System.Drawing.Point(18, 597);
             this.button_calc.Name = "button_calc";
-            this.button_calc.Size = new System.Drawing.Size(539, 61);
+            this.button_calc.Size = new System.Drawing.Size(539, 42);
             this.button_calc.TabIndex = 5;
-            this.button_calc.Text = "Calculer";
+            this.button_calc.Text = "Payer";
             this.button_calc.UseVisualStyleBackColor = true;
             this.button_calc.Visible = false;
             this.button_calc.Click += new System.EventHandler(this.button_calc_Click);
@@ -1602,7 +1668,7 @@
             this.button_gotomain.Enabled = false;
             this.button_gotomain.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_gotomain.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button_gotomain.Location = new System.Drawing.Point(563, 807);
+            this.button_gotomain.Location = new System.Drawing.Point(563, 597);
             this.button_gotomain.Name = "button_gotomain";
             this.button_gotomain.Size = new System.Drawing.Size(309, 42);
             this.button_gotomain.TabIndex = 6;
@@ -1619,7 +1685,7 @@
             this.textBox_log.Name = "textBox_log";
             this.textBox_log.ReadOnly = true;
             this.textBox_log.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox_log.Size = new System.Drawing.Size(853, 769);
+            this.textBox_log.Size = new System.Drawing.Size(853, 555);
             this.textBox_log.TabIndex = 7;
             this.textBox_log.Visible = false;
             // 
@@ -1628,7 +1694,7 @@
             this.button_reset.Enabled = false;
             this.button_reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_reset.ForeColor = System.Drawing.Color.DarkRed;
-            this.button_reset.Location = new System.Drawing.Point(18, 784);
+            this.button_reset.Location = new System.Drawing.Point(18, 574);
             this.button_reset.Name = "button_reset";
             this.button_reset.Size = new System.Drawing.Size(539, 61);
             this.button_reset.TabIndex = 8;
@@ -1642,7 +1708,7 @@
             this.button_raz.Enabled = false;
             this.button_raz.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_raz.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button_raz.Location = new System.Drawing.Point(563, 788);
+            this.button_raz.Location = new System.Drawing.Point(563, 578);
             this.button_raz.Name = "button_raz";
             this.button_raz.Size = new System.Drawing.Size(309, 21);
             this.button_raz.TabIndex = 9;
@@ -1651,21 +1717,52 @@
             this.button_raz.Visible = false;
             this.button_raz.Click += new System.EventHandler(this.button_raz_Click);
             // 
+            // label_prix
+            // 
+            this.label_prix.AutoSize = true;
+            this.label_prix.Enabled = false;
+            this.label_prix.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_prix.Location = new System.Drawing.Point(21, 580);
+            this.label_prix.Name = "label_prix";
+            this.label_prix.Size = new System.Drawing.Size(94, 16);
+            this.label_prix.TabIndex = 10;
+            this.label_prix.Text = "Montant : 0 €";
+            this.label_prix.Visible = false;
+            // 
+            // numeric_entree_10
+            // 
+            this.numeric_entree_10.Location = new System.Drawing.Point(523, 17);
+            this.numeric_entree_10.Name = "numeric_entree_10";
+            this.numeric_entree_10.Size = new System.Drawing.Size(32, 20);
+            this.numeric_entree_10.TabIndex = 19;
+            this.numeric_entree_10.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
+            // 
+            // button_entree_10
+            // 
+            this.button_entree_10.Location = new System.Drawing.Point(306, 6);
+            this.button_entree_10.Name = "button_entree_10";
+            this.button_entree_10.Size = new System.Drawing.Size(211, 38);
+            this.button_entree_10.TabIndex = 18;
+            this.button_entree_10.Text = "Salade";
+            this.button_entree_10.UseVisualStyleBackColor = true;
+            this.button_entree_10.Click += new System.EventHandler(this.button_entree_10_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 861);
+            this.ClientSize = new System.Drawing.Size(884, 661);
+            this.Controls.Add(this.label_prix);
             this.Controls.Add(this.button_raz);
             this.Controls.Add(this.button_gotomain);
             this.Controls.Add(this.tabControl);
             this.Controls.Add(this.Emporter);
             this.Controls.Add(this.Sur_place);
-            this.Controls.Add(this.Plus);
             this.Controls.Add(this.button_calc);
             this.Controls.Add(this.textBox_log);
             this.Controls.Add(this.button_reset);
             this.Controls.Add(this.Quitter);
+            this.Controls.Add(this.Plus);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Caisse";
@@ -1735,6 +1832,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_entree_10)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1886,6 +1984,9 @@
         private System.Windows.Forms.Button button_dessert_5;
         private System.Windows.Forms.Button button_reset;
         private System.Windows.Forms.Button button_raz;
+        private System.Windows.Forms.Label label_prix;
+        private System.Windows.Forms.NumericUpDown numeric_entree_10;
+        private System.Windows.Forms.Button button_entree_10;
     }
 }
 

@@ -49,6 +49,8 @@ namespace WindowsFormsApplication3
             textBox_log.Visible = (choix == menu.m_plus);
             button_raz.Enabled = (choix == menu.m_produits);
             button_raz.Visible = (choix == menu.m_produits);
+            label_prix.Enabled = (choix == menu.m_produits);
+            label_prix.Visible = (choix == menu.m_produits);
         }
 
         private void Quitter_Click(object sender, EventArgs e)
@@ -59,12 +61,14 @@ namespace WindowsFormsApplication3
         private void Emporter_Click(object sender, EventArgs e)
         {
             b_emporter = true;
+            numeric_ValueChanged(sender, e);
             switch_to_product(menu.m_produits);
         }
 
         private void Sur_place_Click(object sender, EventArgs e)
         {
             b_emporter = false;
+            numeric_ValueChanged(sender, e);
             switch_to_product(menu.m_produits);
         }
 
@@ -166,6 +170,7 @@ namespace WindowsFormsApplication3
                    (double)numeric_entree_7.Value * 6.70 +
                    (double)numeric_entree_8.Value * 5.10 +
                    (double)numeric_entree_9.Value * 6.30 +
+                   (double)numeric_entree_10.Value * 4.80 +
 
                    (double)numeric_plat_1.Value * 8.20 +
                    (double)numeric_plat_2.Value * 10.0 +
@@ -479,6 +484,7 @@ namespace WindowsFormsApplication3
         {
             double result;
             button_plat_22.Enabled = double.TryParse(numeric_plat_22.Text, out result);
+            numeric_ValueChanged(sender, e);
         }
 
 
@@ -486,6 +492,7 @@ namespace WindowsFormsApplication3
         {
             double result;
             button_plat_23.Enabled = double.TryParse(numeric_plat_23.Text, out result);
+            numeric_ValueChanged(sender, e);
         }
 
         private void button_boisson_22_Click(object sender, EventArgs e)
@@ -500,8 +507,11 @@ namespace WindowsFormsApplication3
 
         private void button_reset_Click(object sender, EventArgs e)
         {
-            File.Delete("log.txt");
-            textBox_log.Text = "";
+            if (MessageBox.Show("Remettre à zéro ?", "Confirmation", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
+            {
+                File.Delete("log.txt");
+                textBox_log.Text = "";
+            }
         }
 
         private void button_raz_Click(object sender, EventArgs e)
@@ -563,6 +573,7 @@ namespace WindowsFormsApplication3
             numeric_entree_7.Value = 0;
             numeric_entree_8.Value = 0;
             numeric_entree_9.Value = 0;
+            numeric_entree_10.Value = 0;
 
             numeric_dessert_1.Value = 0;
             numeric_dessert_2.Value = 0;
@@ -571,6 +582,17 @@ namespace WindowsFormsApplication3
             numeric_dessert_5.Value = 0;
             numeric_dessert_6.Value = 0;
             numeric_dessert_7.Value = 0;
+        }
+
+        private void numeric_ValueChanged(object sender, EventArgs e)
+        {
+            double rec = calc_recette();
+            label_prix.Text = "Prix: " + rec.ToString() + " €";
+        }
+
+        private void button_entree_10_Click(object sender, EventArgs e)
+        {
+            numeric_entree_10.Value++;
         }
     }
 }
