@@ -162,5 +162,7 @@ namespace WindowsFormsApplication3
         {
             MessageBox.Show(calc_recette().ToString("#,#.00#;(#,#.00#)") + " €", "Recette");
         }
+
+
     }
 }

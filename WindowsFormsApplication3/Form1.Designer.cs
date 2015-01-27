@@ -109,6 +109,10 @@
             this.button_plat_2 = new System.Windows.Forms.Button();
             this.numeric_plat_1 = new System.Windows.Forms.NumericUpDown();
             this.button_plat_1 = new System.Windows.Forms.Button();
+            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.button_boisson_18 = new System.Windows.Forms.Button();
             this.numeric_boisson_18 = new System.Windows.Forms.NumericUpDown();
@@ -146,14 +150,10 @@
             this.numeric_boisson_2 = new System.Windows.Forms.NumericUpDown();
             this.button_boisson_1 = new System.Windows.Forms.Button();
             this.numeric_boisson_1 = new System.Windows.Forms.NumericUpDown();
-            this.button_calc = new System.Windows.Forms.Button();
-            this.button_gotomain = new System.Windows.Forms.Button();
-            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.shapeContainer2 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lineShape4 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.button_calc = new System.Windows.Forms.Button();
+            this.button_gotomain = new System.Windows.Forms.Button();
             this.tabControl.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_dessert_4)).BeginInit();
@@ -297,7 +297,6 @@
             this.numeric_dessert_4.Name = "numeric_dessert_4";
             this.numeric_dessert_4.Size = new System.Drawing.Size(32, 20);
             this.numeric_dessert_4.TabIndex = 9;
-            this.numeric_dessert_4.ValueChanged += new System.EventHandler(this.numericUpDown3_ValueChanged);
             // 
             // button_dessert_4
             // 
@@ -307,7 +306,6 @@
             this.button_dessert_4.TabIndex = 8;
             this.button_dessert_4.Text = "Dessert 1.90";
             this.button_dessert_4.UseVisualStyleBackColor = true;
-            this.button_dessert_4.Click += new System.EventHandler(this.button3_Click);
             // 
             // numeric_dessert_3
             // 
@@ -347,7 +345,6 @@
             this.numeric_dessert_1.Name = "numeric_dessert_1";
             this.numeric_dessert_1.Size = new System.Drawing.Size(32, 20);
             this.numeric_dessert_1.TabIndex = 3;
-            this.numeric_dessert_1.ValueChanged += new System.EventHandler(this.numeric_dessert_1_ValueChanged);
             // 
             // button_dessert_1
             // 
@@ -402,6 +399,7 @@
             this.button_entree_9.TabIndex = 16;
             this.button_entree_9.Text = "Beignets crevettes\r\nCroustillants aux crevettes ";
             this.button_entree_9.UseVisualStyleBackColor = true;
+            this.button_entree_9.Click += new System.EventHandler(this.button_entree_9_Click);
             // 
             // numeric_entree_8
             // 
@@ -418,7 +416,7 @@
             this.button_entree_8.TabIndex = 14;
             this.button_entree_8.Text = "Ha cau";
             this.button_entree_8.UseVisualStyleBackColor = true;
-            this.button_entree_8.Click += new System.EventHandler(this.button4_Click);
+            this.button_entree_8.Click += new System.EventHandler(this.button_entree_8_Click);
             // 
             // numeric_entree_7
             // 
@@ -435,6 +433,7 @@
             this.button_entree_7.TabIndex = 12;
             this.button_entree_7.Text = "Bo Bun\r\nCrepe vietnamienne";
             this.button_entree_7.UseVisualStyleBackColor = true;
+            this.button_entree_7.Click += new System.EventHandler(this.button_entree_7_Click);
             // 
             // numeric_entree_6
             // 
@@ -468,6 +467,7 @@
             this.button_entree_5.TabIndex = 8;
             this.button_entree_5.Text = "Assiette maison";
             this.button_entree_5.UseVisualStyleBackColor = true;
+            this.button_entree_5.Click += new System.EventHandler(this.button_entree_5_Click);
             // 
             // numeric_entree_4
             // 
@@ -484,6 +484,7 @@
             this.button_entree_4.TabIndex = 6;
             this.button_entree_4.Text = "Nems crevette\r\nRouleaux de printemps";
             this.button_entree_4.UseVisualStyleBackColor = true;
+            this.button_entree_4.Click += new System.EventHandler(this.button_entree_4_Click);
             // 
             // numeric_entree_3
             // 
@@ -962,6 +963,43 @@
             this.button_plat_1.Text = "Plaques";
             this.button_plat_1.UseVisualStyleBackColor = true;
             // 
+            // shapeContainer1
+            // 
+            this.shapeContainer1.Location = new System.Drawing.Point(3, 3);
+            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer1.Name = "shapeContainer1";
+            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.lineShape3,
+            this.lineShape1,
+            this.lineShape2});
+            this.shapeContainer1.Size = new System.Drawing.Size(844, 737);
+            this.shapeContainer1.TabIndex = 47;
+            this.shapeContainer1.TabStop = false;
+            // 
+            // lineShape3
+            // 
+            this.lineShape3.Name = "lineShape3";
+            this.lineShape3.X1 = 631;
+            this.lineShape3.X2 = 275;
+            this.lineShape3.Y1 = 520;
+            this.lineShape3.Y2 = 520;
+            // 
+            // lineShape1
+            // 
+            this.lineShape1.Name = "lineShape1";
+            this.lineShape1.X1 = 632;
+            this.lineShape1.X2 = 276;
+            this.lineShape1.Y1 = 304;
+            this.lineShape1.Y2 = 304;
+            // 
+            // lineShape2
+            // 
+            this.lineShape2.Name = "lineShape2";
+            this.lineShape2.X1 = 275;
+            this.lineShape2.X2 = 275;
+            this.lineShape2.Y1 = 12;
+            this.lineShape2.Y2 = 684;
+            // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.button_boisson_18);
@@ -1297,6 +1335,25 @@
             this.numeric_boisson_1.Size = new System.Drawing.Size(43, 20);
             this.numeric_boisson_1.TabIndex = 0;
             // 
+            // shapeContainer2
+            // 
+            this.shapeContainer2.Location = new System.Drawing.Point(3, 3);
+            this.shapeContainer2.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer2.Name = "shapeContainer2";
+            this.shapeContainer2.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.lineShape4});
+            this.shapeContainer2.Size = new System.Drawing.Size(844, 737);
+            this.shapeContainer2.TabIndex = 38;
+            this.shapeContainer2.TabStop = false;
+            // 
+            // lineShape4
+            // 
+            this.lineShape4.Name = "lineShape4";
+            this.lineShape4.X1 = 9;
+            this.lineShape4.X2 = 702;
+            this.lineShape4.Y1 = 189;
+            this.lineShape4.Y2 = 189;
+            // 
             // button_calc
             // 
             this.button_calc.Enabled = false;
@@ -1324,62 +1381,6 @@
             this.button_gotomain.UseVisualStyleBackColor = true;
             this.button_gotomain.Visible = false;
             this.button_gotomain.Click += new System.EventHandler(this.button_gotomain_Click);
-            // 
-            // shapeContainer1
-            // 
-            this.shapeContainer1.Location = new System.Drawing.Point(3, 3);
-            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer1.Name = "shapeContainer1";
-            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.lineShape3,
-            this.lineShape1,
-            this.lineShape2});
-            this.shapeContainer1.Size = new System.Drawing.Size(844, 737);
-            this.shapeContainer1.TabIndex = 47;
-            this.shapeContainer1.TabStop = false;
-            // 
-            // lineShape2
-            // 
-            this.lineShape2.Name = "lineShape2";
-            this.lineShape2.X1 = 275;
-            this.lineShape2.X2 = 275;
-            this.lineShape2.Y1 = 12;
-            this.lineShape2.Y2 = 684;
-            // 
-            // lineShape1
-            // 
-            this.lineShape1.Name = "lineShape1";
-            this.lineShape1.X1 = 632;
-            this.lineShape1.X2 = 276;
-            this.lineShape1.Y1 = 304;
-            this.lineShape1.Y2 = 304;
-            // 
-            // lineShape3
-            // 
-            this.lineShape3.Name = "lineShape3";
-            this.lineShape3.X1 = 631;
-            this.lineShape3.X2 = 275;
-            this.lineShape3.Y1 = 520;
-            this.lineShape3.Y2 = 520;
-            // 
-            // shapeContainer2
-            // 
-            this.shapeContainer2.Location = new System.Drawing.Point(3, 3);
-            this.shapeContainer2.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer2.Name = "shapeContainer2";
-            this.shapeContainer2.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.lineShape4});
-            this.shapeContainer2.Size = new System.Drawing.Size(844, 737);
-            this.shapeContainer2.TabIndex = 38;
-            this.shapeContainer2.TabStop = false;
-            // 
-            // lineShape4
-            // 
-            this.lineShape4.Name = "lineShape4";
-            this.lineShape4.X1 = 9;
-            this.lineShape4.X2 = 702;
-            this.lineShape4.Y1 = 189;
-            this.lineShape4.Y2 = 189;
             // 
             // Form1
             // 
