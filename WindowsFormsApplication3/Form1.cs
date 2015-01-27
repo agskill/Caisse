@@ -13,27 +13,37 @@ namespace WindowsFormsApplication3
 {
     public partial class Form1 : Form
     {
+        public enum menu
+        {
+            m_principal,
+            m_produits,
+            m_plus
+        };
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void switch_to_product(bool invert)
+        private void switch_to_product(menu choix)
         {
-            Quitter.Enabled = invert;
-            Quitter.Visible = invert;
-            Emporter.Enabled = invert;
-            Emporter.Visible = invert;
-            Sur_place.Enabled = invert;
-            Sur_place.Visible = invert;
-            Plus.Enabled = invert;
-            Plus.Visible = invert;
-            tabControl.Visible = !invert;
-            tabControl.Enabled = !invert;
-            button_calc.Visible = !invert;
-            button_calc.Enabled = !invert;
-            button_gotomain.Visible = !invert;
-            button_gotomain.Enabled = !invert;
+            Quitter.Enabled = (choix == menu.m_principal);
+            Quitter.Visible = (choix == menu.m_principal);
+            Emporter.Enabled = (choix == menu.m_principal);
+            Emporter.Visible = (choix == menu.m_principal);
+            Sur_place.Enabled = (choix == menu.m_principal);
+            Sur_place.Visible = (choix == menu.m_principal);
+            Plus.Enabled = (choix == menu.m_principal);
+            Plus.Visible = (choix == menu.m_principal);
+            tabControl.Visible = (choix == menu.m_produits);
+            tabControl.Enabled = (choix == menu.m_produits);
+            button_calc.Visible = (choix == menu.m_produits);
+            button_calc.Enabled = (choix == menu.m_produits);
+            button_gotomain.Visible = (choix != menu.m_principal);
+            button_gotomain.Enabled = (choix != menu.m_principal);
+            button_reset.Visible = (choix == menu.m_plus);
+            button_reset.Enabled = (choix == menu.m_plus);
+            textBox_log.Enabled = (choix == menu.m_plus);
+            textBox_log.Visible = (choix == menu.m_plus);
         }
 
         private void Quitter_Click(object sender, EventArgs e)
@@ -43,22 +53,37 @@ namespace WindowsFormsApplication3
 
         private void Emporter_Click(object sender, EventArgs e)
         {
-            switch_to_product(false);
+            switch_to_product(menu.m_produits);
         }
 
         private void Sur_place_Click(object sender, EventArgs e)
         {
-            switch_to_product(false);
+            switch_to_product(menu.m_produits);
         }
 
         private void Plus_Click(object sender, EventArgs e)
         {
-            switch_to_product(false);
+            switch_to_product(menu.m_plus);
+            try
+            {
+                FileStream fstream = new FileStream("log.txt", FileMode.Open);
+                StreamReader sreader = new StreamReader(fstream);
+                textBox_log.Text = sreader.ReadToEnd();
+                textBox_log.SelectionStart = textBox_log.Text.Length;
+                textBox_log.SelectionLength = 0;
+                textBox_log.ScrollToCaret();
+                sreader.Close();
+                fstream.Close();
+            }
+            catch
+            {
+
+            }
         }
 
         private void button_gotomain_Click(object sender, EventArgs e)
         {
-            switch_to_product(true);
+            switch_to_product(menu.m_principal);
         }
 
         private void button_entree_1_Click(object sender, EventArgs e)
@@ -184,9 +209,6 @@ namespace WindowsFormsApplication3
                    (double)numeric_boisson_22.Value * 32.0 +
                    (double)numeric_boisson_23.Value * 20.0 
                    ;
-
-
-
         }
 
         private void enregistre_prix(double prix)
@@ -467,6 +489,12 @@ namespace WindowsFormsApplication3
         private void button_boisson_23_Click(object sender, EventArgs e)
         {
             numeric_boisson_23.Value++;
+        }
+
+        private void button_reset_Click(object sender, EventArgs e)
+        {
+            File.Delete("log.txt");
+            textBox_log.Text = "";
         }
     }
 }

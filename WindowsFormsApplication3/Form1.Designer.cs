@@ -171,6 +171,7 @@
             this.button_calc = new System.Windows.Forms.Button();
             this.button_gotomain = new System.Windows.Forms.Button();
             this.textBox_log = new System.Windows.Forms.TextBox();
+            this.button_reset = new System.Windows.Forms.Button();
             this.tabControl.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_dessert_7)).BeginInit();
@@ -1616,23 +1617,39 @@
             this.textBox_log.Multiline = true;
             this.textBox_log.Name = "textBox_log";
             this.textBox_log.ReadOnly = true;
+            this.textBox_log.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox_log.Size = new System.Drawing.Size(853, 769);
             this.textBox_log.TabIndex = 7;
             this.textBox_log.Visible = false;
+            // 
+            // button_reset
+            // 
+            this.button_reset.Enabled = false;
+            this.button_reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_reset.ForeColor = System.Drawing.Color.DarkRed;
+            this.button_reset.Location = new System.Drawing.Point(18, 784);
+            this.button_reset.Name = "button_reset";
+            this.button_reset.Size = new System.Drawing.Size(539, 61);
+            this.button_reset.TabIndex = 8;
+            this.button_reset.Text = "Reset";
+            this.button_reset.UseVisualStyleBackColor = true;
+            this.button_reset.Visible = false;
+            this.button_reset.Click += new System.EventHandler(this.button_reset_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 861);
+            this.Controls.Add(this.button_reset);
             this.Controls.Add(this.button_gotomain);
-            this.Controls.Add(this.button_calc);
-            this.Controls.Add(this.tabControl);
-            this.Controls.Add(this.Quitter);
-            this.Controls.Add(this.Plus);
-            this.Controls.Add(this.Sur_place);
-            this.Controls.Add(this.Emporter);
             this.Controls.Add(this.textBox_log);
+            this.Controls.Add(this.tabControl);
+            this.Controls.Add(this.Emporter);
+            this.Controls.Add(this.Sur_place);
+            this.Controls.Add(this.Plus);
+            this.Controls.Add(this.Quitter);
+            this.Controls.Add(this.button_calc);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Caisse";
@@ -1851,6 +1868,7 @@
         private System.Windows.Forms.Button button_dessert_6;
         private System.Windows.Forms.NumericUpDown numeric_dessert_5;
         private System.Windows.Forms.Button button_dessert_5;
+        private System.Windows.Forms.Button button_reset;
     }
 }
 
