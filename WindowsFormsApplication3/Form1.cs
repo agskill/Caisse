@@ -241,7 +241,6 @@ namespace WindowsFormsApplication3
             numeric_plat_4.Value++;
         }
 
-
         private void button_plat_5_Click(object sender, EventArgs e)
         {
             numeric_plat_5.Value++;
