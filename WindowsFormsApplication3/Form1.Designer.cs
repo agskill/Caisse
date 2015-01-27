@@ -162,11 +162,9 @@
             this.lineShape4 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.button_calc = new System.Windows.Forms.Button();
             this.button_gotomain = new System.Windows.Forms.Button();
-
             this.numeric_plat_22 = new System.Windows.Forms.TextBox();
             this.numeric_plat_23 = new System.Windows.Forms.TextBox();
             this.textBox_log = new System.Windows.Forms.TextBox();
-
             this.tabControl.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_dessert_4)).BeginInit();
@@ -325,7 +323,6 @@
             this.button_dessert_4.TabIndex = 8;
             this.button_dessert_4.Text = "Dessert 1.90";
             this.button_dessert_4.UseVisualStyleBackColor = true;
-            this.button_dessert_4.Click += new System.EventHandler(this.button_dessert_4_Click);
             // 
             // numeric_dessert_3
             // 
@@ -342,7 +339,6 @@
             this.button_dessert_3.TabIndex = 6;
             this.button_dessert_3.Text = "Dessert 5.20";
             this.button_dessert_3.UseVisualStyleBackColor = true;
-            this.button_dessert_3.Click += new System.EventHandler(this.button_dessert_3_Click);
             // 
             // numeric_dessert_2
             // 
@@ -359,7 +355,6 @@
             this.button_dessert_2.TabIndex = 4;
             this.button_dessert_2.Text = "Dessert 4.70";
             this.button_dessert_2.UseVisualStyleBackColor = true;
-            this.button_dessert_2.Click += new System.EventHandler(this.button_dessert_2_Click);
             // 
             // numeric_dessert_1
             // 
@@ -926,7 +921,6 @@
             this.button_plat_4.TabIndex = 6;
             this.button_plat_4.Text = "Porc doux\r\nPoulet doux";
             this.button_plat_4.UseVisualStyleBackColor = true;
-            this.button_plat_4.Click += new System.EventHandler(this.button_plat_4_Click);
             // 
             // numeric_plat_3
             // 
@@ -943,7 +937,6 @@
             this.button_plat_3.TabIndex = 4;
             this.button_plat_3.Text = "Porc";
             this.button_plat_3.UseVisualStyleBackColor = true;
-            this.button_plat_3.Click += new System.EventHandler(this.button_plat_3_Click);
             // 
             // numeric_plat_2
             // 
@@ -960,7 +953,6 @@
             this.button_plat_2.TabIndex = 2;
             this.button_plat_2.Text = "Plat ganis";
             this.button_plat_2.UseVisualStyleBackColor = true;
-            this.button_plat_2.Click += new System.EventHandler(this.button_plat_2_Click);
             // 
             // numeric_plat_1
             // 
@@ -977,7 +969,6 @@
             this.button_plat_1.TabIndex = 0;
             this.button_plat_1.Text = "Plaques";
             this.button_plat_1.UseVisualStyleBackColor = true;
-            this.button_plat_1.Click += new System.EventHandler(this.button_plat_1_Click);
             // 
             // shapeContainer1
             // 
@@ -1495,7 +1486,7 @@
             this.numeric_plat_22.Name = "numeric_plat_22";
             this.numeric_plat_22.Size = new System.Drawing.Size(153, 20);
             this.numeric_plat_22.TabIndex = 48;
-
+            this.numeric_plat_22.TextChanged += new System.EventHandler(this.numeric_plat_22_TextChanged);
             // 
             // numeric_plat_23
             // 
@@ -1503,7 +1494,7 @@
             this.numeric_plat_23.Name = "numeric_plat_23";
             this.numeric_plat_23.Size = new System.Drawing.Size(153, 20);
             this.numeric_plat_23.TabIndex = 49;
- 
+            this.numeric_plat_23.TextChanged += new System.EventHandler(this.numeric_plat_23_TextChanged);
             // 
             // textBox_log
             // 
@@ -1516,7 +1507,6 @@
             this.textBox_log.TabIndex = 7;
             this.textBox_log.Visible = false;
             // 
-
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

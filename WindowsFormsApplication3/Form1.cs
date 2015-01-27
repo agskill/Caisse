@@ -113,6 +113,10 @@ namespace WindowsFormsApplication3
 
         private double calc_recette()
         {
+            double divers_10 = 0;
+            double divers_20 = 0;
+            double.TryParse(numeric_plat_22.Text, out divers_10);
+            double.TryParse(numeric_plat_23.Text, out divers_20);
             return (double)numeric_dessert_1.Value * 3.30 +
                    (double)numeric_dessert_2.Value * 4.70 +
                    (double)numeric_dessert_3.Value * 5.20 +
@@ -150,6 +154,8 @@ namespace WindowsFormsApplication3
 
                    (double)numeric_plat_20.Value * 17.5 +
                    (double)numeric_plat_21.Value * 12.9 +
+                   divers_10 +
+                   divers_20 +
 
                    (double)numeric_boisson_1.Value * 3.50 +
                    (double)numeric_boisson_2.Value * 3.50 +
@@ -232,6 +238,16 @@ namespace WindowsFormsApplication3
             numeric_plat_4.Value++;
         }
 
+        private void numeric_plat_22_TextChanged(object sender, EventArgs e)
+        {
+            double result;
+            button_plat_22.Enabled = double.TryParse(numeric_plat_22.Text, out result);
+        }
 
+        private void numeric_plat_23_TextChanged(object sender, EventArgs e)
+        {
+            double result;
+            button_plat_23.Enabled = double.TryParse(numeric_plat_23.Text, out result);
+        }
     }
 }
