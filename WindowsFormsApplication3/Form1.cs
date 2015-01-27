@@ -70,6 +70,41 @@ namespace WindowsFormsApplication3
             numeric_entree_2.Value++;
         }
 
+        private void button_entree_3_Click(object sender, EventArgs e)
+        {
+            numeric_entree_3.Value++;
+        }
+
+        private void button_entree_4_Click(object sender, EventArgs e)
+        {
+            numeric_entree_4.Value++;
+        }
+
+        private void button_entree_5_Click(object sender, EventArgs e)
+        {
+            numeric_entree_5.Value++;
+        }
+
+        private void button_entree_6_Click(object sender, EventArgs e)
+        {
+            numeric_entree_6.Value++;
+        }
+
+        private void button_entree_7_Click(object sender, EventArgs e)
+        {
+            numeric_entree_7.Value++;
+        }
+
+        private void button_entree_8_Click(object sender, EventArgs e)
+        {
+            numeric_entree_8.Value++;
+        }
+
+        private void button_entree_9_Click(object sender, EventArgs e)
+        {
+            numeric_entree_9.Value++;
+        }
+
         private void button_dessert_1_Click(object sender, EventArgs e)
         {
             numeric_dessert_1.Value++;
@@ -78,43 +113,54 @@ namespace WindowsFormsApplication3
         private double calc_recette()
         {
             return (double)numeric_dessert_1.Value * 3.30 +
+                   (double)numeric_dessert_2.Value * 4.70 +
+                   (double)numeric_dessert_3.Value * 5.20 +
+                   (double)numeric_dessert_4.Value * 1.90 +
+
                    (double)numeric_entree_1.Value * 5.60 +
-                   (double)numeric_entree_2.Value * 6.80;
+                   (double)numeric_entree_2.Value * 6.80 +
+                   (double)numeric_entree_3.Value * 4.90 +
+                   (double)numeric_entree_4.Value * 5.00 +
+                   (double)numeric_entree_5.Value * 6.30 +
+                   (double)numeric_entree_6.Value * 6.00 +
+                   (double)numeric_entree_7.Value * 6.70 +
+                   (double)numeric_entree_8.Value * 5.10 +
+                   (double)numeric_entree_9.Value * 6.30 +
+
+                   (double)numeric_plat_1.Value * 8.20 +
+                   (double)numeric_plat_2.Value * 10.0 +
+                   (double)numeric_plat_3.Value * 6.50 +
+                   (double)numeric_plat_4.Value * 6.80 +
+                   (double)numeric_plat_5.Value * 7.30 +
+                   (double)numeric_plat_6.Value * 7.20 +
+                   (double)numeric_plat_7.Value * 7.30 +
+                   (double)numeric_plat_8.Value * 6.90 +
+                   (double)numeric_plat_9.Value * 7.70 +
+                   (double)numeric_plat_10.Value * 6.50 +
+                   (double)numeric_plat_11.Value * 7.20 +
+                   (double)numeric_plat_12.Value * 7.00 +
+                   (double)numeric_plat_13.Value * 13.5 +
+                   (double)numeric_plat_14.Value * 7.30 +
+                   (double)numeric_plat_15.Value * 7.90 +
+                   (double)numeric_plat_16.Value * 8.20 +
+                   (double)numeric_plat_17.Value * 3.80 +
+                   (double)numeric_plat_18.Value * 3.00 +
+                   (double)numeric_plat_19.Value * 4.10 +
+
+                   (double)numeric_plat_20.Value * 17.5 +
+                   (double)numeric_plat_21.Value * 12.9 +
+                   (double)numeric_plat_22.Value +
+                   (double)numeric_plat_23.Value +
+
+                   (double)numeric_boisson_1.Value * 3.50;
+
+
+
         }
 
         private void button_calc_Click(object sender, EventArgs e)
         {
             MessageBox.Show(calc_recette().ToString("#,#.00#;(#,#.00#)") + " €", "Recette");
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void numeric_dessert_1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void numericUpDown3_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button_entree_3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button_entree_6_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
