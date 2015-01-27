@@ -114,6 +114,14 @@
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.button_boisson_23 = new System.Windows.Forms.Button();
+            this.numeric_boisson_23 = new System.Windows.Forms.NumericUpDown();
+            this.button_boisson_22 = new System.Windows.Forms.Button();
+            this.numeric_boisson_22 = new System.Windows.Forms.NumericUpDown();
+            this.button_boisson_21 = new System.Windows.Forms.Button();
+            this.numeric_boisson_21 = new System.Windows.Forms.NumericUpDown();
+            this.button_boisson_20 = new System.Windows.Forms.Button();
+            this.numeric_boisson_20 = new System.Windows.Forms.NumericUpDown();
             this.button_boisson_19 = new System.Windows.Forms.Button();
             this.numeric_boisson_19 = new System.Windows.Forms.NumericUpDown();
             this.button_boisson_18 = new System.Windows.Forms.Button();
@@ -156,14 +164,6 @@
             this.lineShape4 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.button_calc = new System.Windows.Forms.Button();
             this.button_gotomain = new System.Windows.Forms.Button();
-            this.button_boisson_21 = new System.Windows.Forms.Button();
-            this.numeric_boisson_21 = new System.Windows.Forms.NumericUpDown();
-            this.button_boisson_20 = new System.Windows.Forms.Button();
-            this.numeric_boisson_20 = new System.Windows.Forms.NumericUpDown();
-            this.button_boisson_23 = new System.Windows.Forms.Button();
-            this.numeric_boisson_23 = new System.Windows.Forms.NumericUpDown();
-            this.button_boisson_22 = new System.Windows.Forms.Button();
-            this.numeric_boisson_22 = new System.Windows.Forms.NumericUpDown();
             this.tabControl.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_dessert_4)).BeginInit();
@@ -205,6 +205,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.numeric_plat_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_plat_1)).BeginInit();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_17)).BeginInit();
@@ -224,10 +228,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_22)).BeginInit();
             this.SuspendLayout();
             // 
             // Emporter
@@ -324,6 +324,7 @@
             this.button_dessert_4.TabIndex = 8;
             this.button_dessert_4.Text = "Dessert 1.90";
             this.button_dessert_4.UseVisualStyleBackColor = true;
+            this.button_dessert_4.Click += new System.EventHandler(this.button_dessert_4_Click);
             // 
             // numeric_dessert_3
             // 
@@ -340,6 +341,7 @@
             this.button_dessert_3.TabIndex = 6;
             this.button_dessert_3.Text = "Dessert 5.20";
             this.button_dessert_3.UseVisualStyleBackColor = true;
+            this.button_dessert_3.Click += new System.EventHandler(this.button_dessert_3_Click);
             // 
             // numeric_dessert_2
             // 
@@ -356,6 +358,7 @@
             this.button_dessert_2.TabIndex = 4;
             this.button_dessert_2.Text = "Dessert 4.70";
             this.button_dessert_2.UseVisualStyleBackColor = true;
+            this.button_dessert_2.Click += new System.EventHandler(this.button_dessert_2_Click);
             // 
             // numeric_dessert_1
             // 
@@ -395,10 +398,10 @@
             this.tabPage1.Controls.Add(this.numeric_entree_1);
             this.tabPage1.Controls.Add(this.button_entree_1);
             this.tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage1.Location = new System.Drawing.Point(4, 44);
+            this.tabPage1.Location = new System.Drawing.Point(4, 34);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(850, 721);
+            this.tabPage1.Size = new System.Drawing.Size(850, 731);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Entrée";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -607,10 +610,10 @@
             this.tabPage2.Controls.Add(this.button_plat_1);
             this.tabPage2.Controls.Add(this.shapeContainer1);
             this.tabPage2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage2.Location = new System.Drawing.Point(4, 44);
+            this.tabPage2.Location = new System.Drawing.Point(4, 34);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(850, 721);
+            this.tabPage2.Size = new System.Drawing.Size(850, 731);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Plat";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -934,6 +937,7 @@
             this.button_plat_4.TabIndex = 6;
             this.button_plat_4.Text = "Porc doux\r\nPoulet doux";
             this.button_plat_4.UseVisualStyleBackColor = true;
+            this.button_plat_4.Click += new System.EventHandler(this.button_plat_4_Click);
             // 
             // numeric_plat_3
             // 
@@ -950,6 +954,7 @@
             this.button_plat_3.TabIndex = 4;
             this.button_plat_3.Text = "Porc";
             this.button_plat_3.UseVisualStyleBackColor = true;
+            this.button_plat_3.Click += new System.EventHandler(this.button_plat_3_Click);
             // 
             // numeric_plat_2
             // 
@@ -966,6 +971,7 @@
             this.button_plat_2.TabIndex = 2;
             this.button_plat_2.Text = "Plat ganis";
             this.button_plat_2.UseVisualStyleBackColor = true;
+            this.button_plat_2.Click += new System.EventHandler(this.button_plat_2_Click);
             // 
             // numeric_plat_1
             // 
@@ -982,6 +988,7 @@
             this.button_plat_1.TabIndex = 0;
             this.button_plat_1.Text = "Plaques";
             this.button_plat_1.UseVisualStyleBackColor = true;
+            this.button_plat_1.Click += new System.EventHandler(this.button_plat_1_Click);
             // 
             // shapeContainer1
             // 
@@ -992,7 +999,7 @@
             this.lineShape3,
             this.lineShape1,
             this.lineShape2});
-            this.shapeContainer1.Size = new System.Drawing.Size(844, 715);
+            this.shapeContainer1.Size = new System.Drawing.Size(844, 725);
             this.shapeContainer1.TabIndex = 47;
             this.shapeContainer1.TabStop = false;
             // 
@@ -1070,13 +1077,77 @@
             this.tabPage3.Controls.Add(this.numeric_boisson_1);
             this.tabPage3.Controls.Add(this.shapeContainer2);
             this.tabPage3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage3.Location = new System.Drawing.Point(4, 44);
+            this.tabPage3.Location = new System.Drawing.Point(4, 34);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(850, 721);
+            this.tabPage3.Size = new System.Drawing.Size(850, 731);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Boisson";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // button_boisson_23
+            // 
+            this.button_boisson_23.Location = new System.Drawing.Point(9, 662);
+            this.button_boisson_23.Name = "button_boisson_23";
+            this.button_boisson_23.Size = new System.Drawing.Size(153, 39);
+            this.button_boisson_23.TabIndex = 48;
+            this.button_boisson_23.Text = "Champagne 75";
+            this.button_boisson_23.UseVisualStyleBackColor = true;
+            // 
+            // numeric_boisson_23
+            // 
+            this.numeric_boisson_23.Location = new System.Drawing.Point(168, 673);
+            this.numeric_boisson_23.Name = "numeric_boisson_23";
+            this.numeric_boisson_23.Size = new System.Drawing.Size(43, 20);
+            this.numeric_boisson_23.TabIndex = 47;
+            // 
+            // button_boisson_22
+            // 
+            this.button_boisson_22.Location = new System.Drawing.Point(9, 617);
+            this.button_boisson_22.Name = "button_boisson_22";
+            this.button_boisson_22.Size = new System.Drawing.Size(153, 39);
+            this.button_boisson_22.TabIndex = 46;
+            this.button_boisson_22.Text = "Champagne 37.5";
+            this.button_boisson_22.UseVisualStyleBackColor = true;
+            // 
+            // numeric_boisson_22
+            // 
+            this.numeric_boisson_22.Location = new System.Drawing.Point(168, 628);
+            this.numeric_boisson_22.Name = "numeric_boisson_22";
+            this.numeric_boisson_22.Size = new System.Drawing.Size(43, 20);
+            this.numeric_boisson_22.TabIndex = 45;
+            // 
+            // button_boisson_21
+            // 
+            this.button_boisson_21.Location = new System.Drawing.Point(9, 452);
+            this.button_boisson_21.Name = "button_boisson_21";
+            this.button_boisson_21.Size = new System.Drawing.Size(153, 39);
+            this.button_boisson_21.TabIndex = 44;
+            this.button_boisson_21.Text = "1/2 Gaillac";
+            this.button_boisson_21.UseVisualStyleBackColor = true;
+            // 
+            // numeric_boisson_21
+            // 
+            this.numeric_boisson_21.Location = new System.Drawing.Point(168, 463);
+            this.numeric_boisson_21.Name = "numeric_boisson_21";
+            this.numeric_boisson_21.Size = new System.Drawing.Size(43, 20);
+            this.numeric_boisson_21.TabIndex = 43;
+            // 
+            // button_boisson_20
+            // 
+            this.button_boisson_20.Location = new System.Drawing.Point(9, 407);
+            this.button_boisson_20.Name = "button_boisson_20";
+            this.button_boisson_20.Size = new System.Drawing.Size(153, 39);
+            this.button_boisson_20.TabIndex = 42;
+            this.button_boisson_20.Text = "Gaillac";
+            this.button_boisson_20.UseVisualStyleBackColor = true;
+            // 
+            // numeric_boisson_20
+            // 
+            this.numeric_boisson_20.Location = new System.Drawing.Point(168, 418);
+            this.numeric_boisson_20.Name = "numeric_boisson_20";
+            this.numeric_boisson_20.Size = new System.Drawing.Size(43, 20);
+            this.numeric_boisson_20.TabIndex = 41;
             // 
             // button_boisson_19
             // 
@@ -1389,7 +1460,7 @@
             this.shapeContainer2.Name = "shapeContainer2";
             this.shapeContainer2.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
             this.lineShape4});
-            this.shapeContainer2.Size = new System.Drawing.Size(844, 715);
+            this.shapeContainer2.Size = new System.Drawing.Size(844, 725);
             this.shapeContainer2.TabIndex = 38;
             this.shapeContainer2.TabStop = false;
             // 
@@ -1428,70 +1499,6 @@
             this.button_gotomain.UseVisualStyleBackColor = true;
             this.button_gotomain.Visible = false;
             this.button_gotomain.Click += new System.EventHandler(this.button_gotomain_Click);
-            // 
-            // button_boisson_21
-            // 
-            this.button_boisson_21.Location = new System.Drawing.Point(9, 452);
-            this.button_boisson_21.Name = "button_boisson_21";
-            this.button_boisson_21.Size = new System.Drawing.Size(153, 39);
-            this.button_boisson_21.TabIndex = 44;
-            this.button_boisson_21.Text = "1/2 Gaillac";
-            this.button_boisson_21.UseVisualStyleBackColor = true;
-            // 
-            // numeric_boisson_21
-            // 
-            this.numeric_boisson_21.Location = new System.Drawing.Point(168, 463);
-            this.numeric_boisson_21.Name = "numeric_boisson_21";
-            this.numeric_boisson_21.Size = new System.Drawing.Size(43, 20);
-            this.numeric_boisson_21.TabIndex = 43;
-            // 
-            // button_boisson_20
-            // 
-            this.button_boisson_20.Location = new System.Drawing.Point(9, 407);
-            this.button_boisson_20.Name = "button_boisson_20";
-            this.button_boisson_20.Size = new System.Drawing.Size(153, 39);
-            this.button_boisson_20.TabIndex = 42;
-            this.button_boisson_20.Text = "Gaillac";
-            this.button_boisson_20.UseVisualStyleBackColor = true;
-            // 
-            // numeric_boisson_20
-            // 
-            this.numeric_boisson_20.Location = new System.Drawing.Point(168, 418);
-            this.numeric_boisson_20.Name = "numeric_boisson_20";
-            this.numeric_boisson_20.Size = new System.Drawing.Size(43, 20);
-            this.numeric_boisson_20.TabIndex = 41;
-            // 
-            // button_boisson_23
-            // 
-            this.button_boisson_23.Location = new System.Drawing.Point(9, 662);
-            this.button_boisson_23.Name = "button_boisson_23";
-            this.button_boisson_23.Size = new System.Drawing.Size(153, 39);
-            this.button_boisson_23.TabIndex = 48;
-            this.button_boisson_23.Text = "Champagne 75";
-            this.button_boisson_23.UseVisualStyleBackColor = true;
-            // 
-            // numeric_boisson_23
-            // 
-            this.numeric_boisson_23.Location = new System.Drawing.Point(168, 673);
-            this.numeric_boisson_23.Name = "numeric_boisson_23";
-            this.numeric_boisson_23.Size = new System.Drawing.Size(43, 20);
-            this.numeric_boisson_23.TabIndex = 47;
-            // 
-            // button_boisson_22
-            // 
-            this.button_boisson_22.Location = new System.Drawing.Point(9, 617);
-            this.button_boisson_22.Name = "button_boisson_22";
-            this.button_boisson_22.Size = new System.Drawing.Size(153, 39);
-            this.button_boisson_22.TabIndex = 46;
-            this.button_boisson_22.Text = "Champagne 37.5";
-            this.button_boisson_22.UseVisualStyleBackColor = true;
-            // 
-            // numeric_boisson_22
-            // 
-            this.numeric_boisson_22.Location = new System.Drawing.Point(168, 628);
-            this.numeric_boisson_22.Name = "numeric_boisson_22";
-            this.numeric_boisson_22.Size = new System.Drawing.Size(43, 20);
-            this.numeric_boisson_22.TabIndex = 45;
             // 
             // Form1
             // 
@@ -1549,6 +1556,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.numeric_plat_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_plat_1)).EndInit();
             this.tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_17)).EndInit();
@@ -1568,10 +1579,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_22)).EndInit();
             this.ResumeLayout(false);
 
         }

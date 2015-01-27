@@ -199,6 +199,41 @@ namespace WindowsFormsApplication3
             enregistre_prix(recette);
         }
 
+        private void button_dessert_2_Click(object sender, EventArgs e)
+        {
+            numeric_dessert_2.Value++;
+        }
+
+        private void button_dessert_3_Click(object sender, EventArgs e)
+        {
+            numeric_dessert_3.Value++;
+        }
+
+        private void button_dessert_4_Click(object sender, EventArgs e)
+        {
+            numeric_dessert_4.Value++;
+        }
+
+        private void button_plat_1_Click(object sender, EventArgs e)
+        {
+            numeric_plat_1.Value++;
+        }
+
+        private void button_plat_2_Click(object sender, EventArgs e)
+        {
+            numeric_plat_2.Value++;
+        }
+
+        private void button_plat_3_Click(object sender, EventArgs e)
+        {
+            numeric_plat_3.Value++;
+        }
+
+        private void button_plat_4_Click(object sender, EventArgs e)
+        {
+            numeric_plat_4.Value++;
+        }
+
 
     }
 }
