@@ -50,6 +50,8 @@
             this.numeric_dessert_1 = new System.Windows.Forms.NumericUpDown();
             this.button_dessert_1 = new System.Windows.Forms.Button();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.numeric_entree_10 = new System.Windows.Forms.NumericUpDown();
+            this.button_entree_10 = new System.Windows.Forms.Button();
             this.numeric_entree_9 = new System.Windows.Forms.NumericUpDown();
             this.button_entree_9 = new System.Windows.Forms.Button();
             this.numeric_entree_8 = new System.Windows.Forms.NumericUpDown();
@@ -174,8 +176,6 @@
             this.button_reset = new System.Windows.Forms.Button();
             this.button_raz = new System.Windows.Forms.Button();
             this.label_prix = new System.Windows.Forms.Label();
-            this.numeric_entree_10 = new System.Windows.Forms.NumericUpDown();
-            this.button_entree_10 = new System.Windows.Forms.Button();
             this.tabControl.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_dessert_7)).BeginInit();
@@ -186,6 +186,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numeric_dessert_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_dessert_1)).BeginInit();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_entree_10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_entree_9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_entree_8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_entree_7)).BeginInit();
@@ -241,7 +242,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numeric_entree_10)).BeginInit();
             this.SuspendLayout();
             // 
             // Emporter
@@ -485,6 +485,24 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Entrée";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // numeric_entree_10
+            // 
+            this.numeric_entree_10.Location = new System.Drawing.Point(523, 17);
+            this.numeric_entree_10.Name = "numeric_entree_10";
+            this.numeric_entree_10.Size = new System.Drawing.Size(32, 20);
+            this.numeric_entree_10.TabIndex = 19;
+            this.numeric_entree_10.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
+            // 
+            // button_entree_10
+            // 
+            this.button_entree_10.Location = new System.Drawing.Point(306, 6);
+            this.button_entree_10.Name = "button_entree_10";
+            this.button_entree_10.Size = new System.Drawing.Size(211, 38);
+            this.button_entree_10.TabIndex = 18;
+            this.button_entree_10.Text = "Salade";
+            this.button_entree_10.UseVisualStyleBackColor = true;
+            this.button_entree_10.Click += new System.EventHandler(this.button_entree_10_Click);
             // 
             // numeric_entree_9
             // 
@@ -1729,24 +1747,6 @@
             this.label_prix.Text = "Montant : 0 €";
             this.label_prix.Visible = false;
             // 
-            // numeric_entree_10
-            // 
-            this.numeric_entree_10.Location = new System.Drawing.Point(523, 17);
-            this.numeric_entree_10.Name = "numeric_entree_10";
-            this.numeric_entree_10.Size = new System.Drawing.Size(32, 20);
-            this.numeric_entree_10.TabIndex = 19;
-            this.numeric_entree_10.ValueChanged += new System.EventHandler(this.numeric_ValueChanged);
-            // 
-            // button_entree_10
-            // 
-            this.button_entree_10.Location = new System.Drawing.Point(306, 6);
-            this.button_entree_10.Name = "button_entree_10";
-            this.button_entree_10.Size = new System.Drawing.Size(211, 38);
-            this.button_entree_10.TabIndex = 18;
-            this.button_entree_10.Text = "Salade";
-            this.button_entree_10.UseVisualStyleBackColor = true;
-            this.button_entree_10.Click += new System.EventHandler(this.button_entree_10_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1776,6 +1776,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numeric_dessert_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_dessert_1)).EndInit();
             this.tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_entree_10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_entree_9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_entree_8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_entree_7)).EndInit();
@@ -1832,7 +1833,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numeric_entree_10)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

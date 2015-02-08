@@ -147,80 +147,127 @@ namespace WindowsFormsApplication3
             numeric_dessert_1.Value++;
         }
 
+        private struct produit
+        {
+            public string name;
+            public double nombre;
+            public double prix;
+            public produit(string name, double nombre, double prix)
+            {
+                this.name = name;
+                this.nombre = nombre;
+                this.prix = prix;
+            }
+        };
+
         private double calc_recette()
+        {
+            return calc_recette(false);
+        }
+
+        private double calc_recette(bool print)
         {
             double divers_10 = 0;
             double divers_20 = 0;
             double.TryParse(numeric_plat_22.Text, out divers_10);
             double.TryParse(numeric_plat_23.Text, out divers_20);
-            return ((double)numeric_dessert_1.Value * 3.30 +
-                   (double)numeric_dessert_2.Value * 4.70 +
-                   (double)numeric_dessert_3.Value * 5.20 +
-                   (double)numeric_dessert_4.Value * 1.90 +
-                   (double)numeric_dessert_5.Value * 3.70 +
-                   (double)numeric_dessert_6.Value * 3.90 +
-                   (double)numeric_dessert_7.Value * 1.00 +
+            List<produit> produits = new List<produit>();
+            produits.Add(new produit(button_dessert_1.Text, (double)numeric_dessert_1.Value, 3.30));
+            produits.Add(new produit(button_dessert_2.Text, (double)numeric_dessert_2.Value, 4.70));
+            produits.Add(new produit(button_dessert_3.Text, (double)numeric_dessert_3.Value, 5.20));
+            produits.Add(new produit(button_dessert_4.Text, (double)numeric_dessert_4.Value, 1.90));
+            produits.Add(new produit(button_dessert_5.Text, (double)numeric_dessert_5.Value, 3.70));
+            produits.Add(new produit(button_dessert_6.Text, (double)numeric_dessert_6.Value, 3.90));
+            produits.Add(new produit(button_dessert_7.Text, (double)numeric_dessert_7.Value, 1.00));
 
-                   (double)numeric_entree_1.Value * 5.60 +
-                   (double)numeric_entree_2.Value * 6.80 +
-                   (double)numeric_entree_3.Value * 4.90 +
-                   (double)numeric_entree_4.Value * 5.00 +
-                   (double)numeric_entree_5.Value * 6.30 +
-                   (double)numeric_entree_6.Value * 6.00 +
-                   (double)numeric_entree_7.Value * 6.70 +
-                   (double)numeric_entree_8.Value * 5.10 +
-                   (double)numeric_entree_9.Value * 6.30 +
-                   (double)numeric_entree_10.Value * 4.80 +
+            produits.Add(new produit(button_entree_1.Text, (double)numeric_entree_1.Value, 5.60));
+            produits.Add(new produit(button_entree_2.Text, (double)numeric_entree_2.Value, 6.80));
+            produits.Add(new produit(button_entree_3.Text, (double)numeric_entree_3.Value, 4.90));
+            produits.Add(new produit(button_entree_4.Text, (double)numeric_entree_4.Value, 5.00));
+            produits.Add(new produit(button_entree_5.Text, (double)numeric_entree_5.Value, 6.30));
+            produits.Add(new produit(button_entree_6.Text, (double)numeric_entree_6.Value, 6.00));
+            produits.Add(new produit(button_entree_7.Text, (double)numeric_entree_7.Value, 6.70));
+            produits.Add(new produit(button_entree_8.Text, (double)numeric_entree_8.Value, 5.10));
+            produits.Add(new produit(button_entree_9.Text, (double)numeric_entree_9.Value, 6.30));
+            produits.Add(new produit(button_entree_10.Text, (double)numeric_entree_10.Value, 4.80));
 
-                   (double)numeric_plat_1.Value * 8.20 +
-                   (double)numeric_plat_2.Value * 10.0 +
-                   (double)numeric_plat_3.Value * 6.50 +
-                   (double)numeric_plat_4.Value * 6.80 +
-                   (double)numeric_plat_5.Value * 7.30 +
-                   (double)numeric_plat_6.Value * 7.20 +
-                   (double)numeric_plat_7.Value * 7.30 +
-                   (double)numeric_plat_8.Value * 6.90 +
-                   (double)numeric_plat_9.Value * 7.70 +
-                   (double)numeric_plat_10.Value * 6.50 +
-                   (double)numeric_plat_11.Value * 7.20 +
-                   (double)numeric_plat_12.Value * 7.00 +
-                   (double)numeric_plat_13.Value * 13.5 +
-                   (double)numeric_plat_14.Value * 7.30 +
-                   (double)numeric_plat_15.Value * 7.90 +
-                   (double)numeric_plat_16.Value * 8.20 +
-                   (double)numeric_plat_17.Value * 3.80 +
-                   (double)numeric_plat_18.Value * 3.00 +
-                   (double)numeric_plat_19.Value * 4.10 +
+            produits.Add(new produit(button_plat_1.Text, (double)numeric_plat_1.Value, 8.20));
+            produits.Add(new produit(button_plat_2.Text, (double)numeric_plat_2.Value, 10.00));
+            produits.Add(new produit(button_plat_3.Text, (double)numeric_plat_3.Value, 6.50));
+            produits.Add(new produit(button_plat_4.Text, (double)numeric_plat_4.Value, 6.80));
+            produits.Add(new produit(button_plat_5.Text, (double)numeric_plat_5.Value, 7.30));
+            produits.Add(new produit(button_plat_6.Text, (double)numeric_plat_6.Value, 7.20));
+            produits.Add(new produit(button_plat_7.Text, (double)numeric_plat_7.Value, 7.30));
+            produits.Add(new produit(button_plat_8.Text, (double)numeric_plat_8.Value, 6.90));
+            produits.Add(new produit(button_plat_9.Text, (double)numeric_plat_9.Value, 7.70));
+            produits.Add(new produit(button_plat_10.Text, (double)numeric_plat_10.Value, 6.50));
+            produits.Add(new produit(button_plat_11.Text, (double)numeric_plat_11.Value, 7.20));
+            produits.Add(new produit(button_plat_12.Text, (double)numeric_plat_12.Value, 7.00));
+            produits.Add(new produit(button_plat_13.Text, (double)numeric_plat_13.Value, 13.50));
+            produits.Add(new produit(button_plat_14.Text, (double)numeric_plat_14.Value, 7.30));
+            produits.Add(new produit(button_plat_15.Text, (double)numeric_plat_15.Value, 7.90));
+            produits.Add(new produit(button_plat_16.Text, (double)numeric_plat_16.Value, 8.20));
+            produits.Add(new produit(button_plat_17.Text, (double)numeric_plat_17.Value, 3.80));
+            produits.Add(new produit(button_plat_18.Text, (double)numeric_plat_18.Value, 3.00));
+            produits.Add(new produit(button_plat_19.Text, (double)numeric_plat_19.Value, 4.10));
 
-                   (double)numeric_plat_20.Value * 17.5 +
-                   (double)numeric_plat_21.Value * 12.9 +
-                   divers_10 +
-                   divers_20 +
+            produits.Add(new produit(button_plat_20.Text, (double)numeric_plat_20.Value, 17.5));
+            produits.Add(new produit(button_plat_21.Text, (double)numeric_plat_21.Value, 12.9));
 
-                   (double)numeric_boisson_1.Value * 3.50 +
-                   (double)numeric_boisson_2.Value * 3.50 +
-                   (double)numeric_boisson_3.Value * 2.50 +
-                   (double)numeric_boisson_4.Value * 1.90 +
-                   (double)numeric_boisson_5.Value * 2.50 +
-                   (double)numeric_boisson_6.Value * 2.90 +
-                   (double)numeric_boisson_7.Value * 2.50 +
-                   (double)numeric_boisson_8.Value * 4.50 +
-                   (double)numeric_boisson_9.Value * 7.00 +
-                   (double)numeric_boisson_10.Value * 13.9 +
-                   (double)numeric_boisson_11.Value * 9.90 +
-                   (double)numeric_boisson_12.Value * 14.9 +
-                   (double)numeric_boisson_13.Value * 9.90 +
-                   (double)numeric_boisson_14.Value * 9.90 +
-                   (double)numeric_boisson_15.Value * 14.9 +
-                   (double)numeric_boisson_16.Value * 9.20 +
-                   (double)numeric_boisson_17.Value * 13.5 +
-                   (double)numeric_boisson_18.Value * 11.9 +
-                   (double)numeric_boisson_19.Value * 3.50 +
-                   (double)numeric_boisson_20.Value * 7.90 +
-                   (double)numeric_boisson_21.Value * 11.5 +
-                   (double)numeric_boisson_22.Value * 32.0 +
-                   (double)numeric_boisson_23.Value * 20.0
-                   ) * (b_emporter ? 0.9 : 1);
+            produits.Add(new produit(button_boisson_1.Text, (double)numeric_boisson_1.Value, 3.50));
+            produits.Add(new produit(button_boisson_2.Text, (double)numeric_boisson_2.Value, 3.50));
+            produits.Add(new produit(button_boisson_3.Text, (double)numeric_boisson_3.Value, 2.50));
+            produits.Add(new produit(button_boisson_4.Text, (double)numeric_boisson_4.Value, 1.90));
+            produits.Add(new produit(button_boisson_5.Text, (double)numeric_boisson_5.Value, 2.50));
+            produits.Add(new produit(button_boisson_6.Text, (double)numeric_boisson_6.Value, 2.90));
+            produits.Add(new produit(button_boisson_7.Text, (double)numeric_boisson_7.Value, 2.50));
+            produits.Add(new produit(button_boisson_8.Text, (double)numeric_boisson_8.Value, 4.50));
+            produits.Add(new produit(button_boisson_9.Text, (double)numeric_boisson_9.Value, 7.00));
+            produits.Add(new produit(button_boisson_10.Text, (double)numeric_boisson_10.Value, 13.90));
+            produits.Add(new produit(button_boisson_11.Text, (double)numeric_boisson_11.Value, 9.90));
+            produits.Add(new produit(button_boisson_12.Text, (double)numeric_boisson_12.Value, 14.90));
+            produits.Add(new produit(button_boisson_13.Text, (double)numeric_boisson_13.Value, 9.90));
+            produits.Add(new produit(button_boisson_14.Text, (double)numeric_boisson_14.Value, 9.90));
+            produits.Add(new produit(button_boisson_15.Text, (double)numeric_boisson_15.Value, 14.90));
+            produits.Add(new produit(button_boisson_16.Text, (double)numeric_boisson_16.Value, 9.20));
+            produits.Add(new produit(button_boisson_17.Text, (double)numeric_boisson_17.Value, 13.50));
+            produits.Add(new produit(button_boisson_18.Text, (double)numeric_boisson_18.Value, 11.90));
+            produits.Add(new produit(button_boisson_19.Text, (double)numeric_boisson_19.Value, 3.50));
+            produits.Add(new produit(button_boisson_20.Text, (double)numeric_boisson_20.Value, 7.90));
+            produits.Add(new produit(button_boisson_21.Text, (double)numeric_boisson_21.Value, 11.50));
+            produits.Add(new produit(button_boisson_22.Text, (double)numeric_boisson_22.Value, 32.00));
+            produits.Add(new produit(button_boisson_23.Text, (double)numeric_boisson_23.Value, 20.00));
+
+            string facture = "Prix\tQuantité\t\tProduit\n" +
+                             "=====================================\n";
+
+            double prix_total = 0;
+            foreach(produit p in produits)
+            {
+                if (p.nombre != 0)
+                {
+                    prix_total += p.nombre * p.prix;
+                    facture += string.Format("{0} €\tx{1}\t\t{2}\n", p.prix.ToString("#,#.00#;(#,#.00#)"), p.nombre, p.name);
+                }
+            }
+            prix_total += divers_10 + divers_20;
+            if (divers_10 != 0)
+                facture += string.Format("{0:0.00} €\t\t\tDivers 10%\n", divers_10);
+            if (divers_20 != 0)
+                facture += string.Format("{0:0.00} €\t\t\tDivers 20%\n", divers_20);
+            facture += "=====================================\n";
+            facture += string.Format("Prix total:\t\t\t{0:0.00} €\n", prix_total);
+            if (b_emporter)
+            {
+                facture += string.Format("Réduction -10% a emporter :\t-{0:0.00} €\n", prix_total * 0.1);
+                facture += string.Format("Prix final :\t\t\t{0:0.00} €\n", prix_total * 0.9);
+                prix_total *= 0.9;
+            }
+            if (print)
+            {
+                MessageBox.Show(facture);
+            }
+            return prix_total;
         }
 
         private void enregistre_prix(double prix)
@@ -228,15 +275,15 @@ namespace WindowsFormsApplication3
             FileStream log_stream = new FileStream("log.txt", FileMode.Append);
             StreamWriter log = new StreamWriter(log_stream);
             
-            log.WriteLine(DateTime.Now.ToString() + " : " + prix.ToString("#,#.00#;(#,#.00#)") + " €");
+            log.WriteLine(DateTime.Now.ToString() + string.Format(" : {0:0.00} €", prix));
             log.Close();
             log_stream.Close();
         }
 
         private void button_calc_Click(object sender, EventArgs e)
         {
-            double recette = calc_recette();
-            MessageBox.Show(recette.ToString("#,#.00#;(#,#.00#)") + " €", "Recette");
+            double recette = calc_recette(true);
+            MessageBox.Show(string.Format("{0:0.00} €", recette), "Recette");
             enregistre_prix(recette);
         }
 
@@ -587,7 +634,7 @@ namespace WindowsFormsApplication3
         private void numeric_ValueChanged(object sender, EventArgs e)
         {
             double rec = calc_recette();
-            label_prix.Text = "Prix: " + rec.ToString() + " €";
+            label_prix.Text = string.Format("Prix: {0:0.00} €", rec);
         }
 
         private void button_entree_10_Click(object sender, EventArgs e)
