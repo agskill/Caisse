@@ -196,7 +196,7 @@ namespace WindowsFormsApplication3
             produits.Add(new produit(button_plat_3.Text, (double)numeric_plat_3.Value, 6.50));
             produits.Add(new produit(button_plat_4.Text, (double)numeric_plat_4.Value, 6.80));
             produits.Add(new produit(button_plat_5.Text, (double)numeric_plat_5.Value, 7.30));
-            produits.Add(new produit(button_plat_6.Text, (double)numeric_plat_6.Value, 7.20));
+            produits.Add(new produit(button_plat_6.Text, (double)numeric_plat_6.Value, 7.00));
             produits.Add(new produit(button_plat_7.Text, (double)numeric_plat_7.Value, 7.30));
             produits.Add(new produit(button_plat_8.Text, (double)numeric_plat_8.Value, 6.90));
             produits.Add(new produit(button_plat_9.Text, (double)numeric_plat_9.Value, 7.70));
@@ -237,6 +237,10 @@ namespace WindowsFormsApplication3
             produits.Add(new produit(button_boisson_21.Text, (double)numeric_boisson_21.Value, 11.50));
             produits.Add(new produit(button_boisson_22.Text, (double)numeric_boisson_22.Value, 32.00));
             produits.Add(new produit(button_boisson_23.Text, (double)numeric_boisson_23.Value, 20.00));
+            produits.Add(new produit(button_boisson_24.Text, (double)numeric_boisson_24.Value, 3.50));
+            produits.Add(new produit(button_boisson_25.Text, (double)numeric_boisson_25.Value, 2.50));
+            produits.Add(new produit(button_boisson_26.Text, (double)numeric_boisson_26.Value, 3.70));
+            produits.Add(new produit(button_boisson_27.Text, (double)numeric_boisson_27.Value, 3.90));
 
             string facture = "Prix\tQuantité\t\tProduit\n" +
                              "=====================================\n";
@@ -586,6 +590,10 @@ namespace WindowsFormsApplication3
             numeric_boisson_21.Value = 0;
             numeric_boisson_22.Value = 0;
             numeric_boisson_23.Value = 0;
+            numeric_boisson_24.Value = 0;
+            numeric_boisson_25.Value = 0;
+            numeric_boisson_26.Value = 0;
+            numeric_boisson_27.Value = 0;
 
             numeric_plat_1.Value = 0;
             numeric_plat_2.Value = 0;
@@ -640,6 +648,26 @@ namespace WindowsFormsApplication3
         private void button_entree_10_Click(object sender, EventArgs e)
         {
             numeric_entree_10.Value++;
+        }
+
+        private void button_boisson_24_Click(object sender, EventArgs e)
+        {
+            numeric_boisson_24.Value++;
+        }
+
+        private void button_boisson_25_Click(object sender, EventArgs e)
+        {
+            numeric_boisson_25.Value++;
+        }
+
+        private void button_boisson_26_Click(object sender, EventArgs e)
+        {
+            numeric_boisson_26.Value++;
+        }
+
+        private void button_boisson_27_Click(object sender, EventArgs e)
+        {
+            numeric_boisson_27.Value++;
         }
     }
 }

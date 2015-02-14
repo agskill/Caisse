@@ -176,6 +176,14 @@
             this.button_reset = new System.Windows.Forms.Button();
             this.button_raz = new System.Windows.Forms.Button();
             this.label_prix = new System.Windows.Forms.Label();
+            this.button_boisson_24 = new System.Windows.Forms.Button();
+            this.numeric_boisson_24 = new System.Windows.Forms.NumericUpDown();
+            this.button_boisson_25 = new System.Windows.Forms.Button();
+            this.numeric_boisson_25 = new System.Windows.Forms.NumericUpDown();
+            this.button_boisson_26 = new System.Windows.Forms.Button();
+            this.numeric_boisson_26 = new System.Windows.Forms.NumericUpDown();
+            this.button_boisson_27 = new System.Windows.Forms.Button();
+            this.numeric_boisson_27 = new System.Windows.Forms.NumericUpDown();
             this.tabControl.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_dessert_7)).BeginInit();
@@ -242,6 +250,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_27)).BeginInit();
             this.SuspendLayout();
             // 
             // Emporter
@@ -1163,10 +1175,10 @@
             // lineShape1
             // 
             this.lineShape1.Name = "lineShape1";
-            this.lineShape1.X1 = 632;
-            this.lineShape1.X2 = 276;
-            this.lineShape1.Y1 = 304;
-            this.lineShape1.Y2 = 304;
+            this.lineShape1.X1 = 631;
+            this.lineShape1.X2 = 275;
+            this.lineShape1.Y1 = 393;
+            this.lineShape1.Y2 = 393;
             // 
             // lineShape2
             // 
@@ -1178,6 +1190,15 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.AllowDrop = true;
+            this.tabPage3.Controls.Add(this.button_boisson_27);
+            this.tabPage3.Controls.Add(this.numeric_boisson_27);
+            this.tabPage3.Controls.Add(this.button_boisson_26);
+            this.tabPage3.Controls.Add(this.numeric_boisson_26);
+            this.tabPage3.Controls.Add(this.button_boisson_25);
+            this.tabPage3.Controls.Add(this.numeric_boisson_25);
+            this.tabPage3.Controls.Add(this.button_boisson_24);
+            this.tabPage3.Controls.Add(this.numeric_boisson_24);
             this.tabPage3.Controls.Add(this.button_boisson_23);
             this.tabPage3.Controls.Add(this.numeric_boisson_23);
             this.tabPage3.Controls.Add(this.button_boisson_22);
@@ -1236,17 +1257,17 @@
             // 
             // button_boisson_23
             // 
-            this.button_boisson_23.Location = new System.Drawing.Point(500, 454);
+            this.button_boisson_23.Location = new System.Drawing.Point(500, 417);
             this.button_boisson_23.Name = "button_boisson_23";
             this.button_boisson_23.Size = new System.Drawing.Size(153, 39);
             this.button_boisson_23.TabIndex = 48;
-            this.button_boisson_23.Text = "Champagne 75";
+            this.button_boisson_23.Text = "Champagne 37.5 cl";
             this.button_boisson_23.UseVisualStyleBackColor = true;
             this.button_boisson_23.Click += new System.EventHandler(this.button_boisson_23_Click);
             // 
             // numeric_boisson_23
             // 
-            this.numeric_boisson_23.Location = new System.Drawing.Point(659, 465);
+            this.numeric_boisson_23.Location = new System.Drawing.Point(659, 428);
             this.numeric_boisson_23.Name = "numeric_boisson_23";
             this.numeric_boisson_23.Size = new System.Drawing.Size(43, 20);
             this.numeric_boisson_23.TabIndex = 47;
@@ -1254,17 +1275,17 @@
             // 
             // button_boisson_22
             // 
-            this.button_boisson_22.Location = new System.Drawing.Point(500, 409);
+            this.button_boisson_22.Location = new System.Drawing.Point(500, 372);
             this.button_boisson_22.Name = "button_boisson_22";
             this.button_boisson_22.Size = new System.Drawing.Size(153, 39);
             this.button_boisson_22.TabIndex = 46;
-            this.button_boisson_22.Text = "Champagne 37.5";
+            this.button_boisson_22.Text = "Champagne 75 cl";
             this.button_boisson_22.UseVisualStyleBackColor = true;
             this.button_boisson_22.Click += new System.EventHandler(this.button_boisson_22_Click);
             // 
             // numeric_boisson_22
             // 
-            this.numeric_boisson_22.Location = new System.Drawing.Point(659, 420);
+            this.numeric_boisson_22.Location = new System.Drawing.Point(659, 383);
             this.numeric_boisson_22.Name = "numeric_boisson_22";
             this.numeric_boisson_22.Size = new System.Drawing.Size(43, 20);
             this.numeric_boisson_22.TabIndex = 45;
@@ -1524,7 +1545,7 @@
             // 
             // button_boisson_7
             // 
-            this.button_boisson_7.Location = new System.Drawing.Point(500, 193);
+            this.button_boisson_7.Location = new System.Drawing.Point(500, 194);
             this.button_boisson_7.Name = "button_boisson_7";
             this.button_boisson_7.Size = new System.Drawing.Size(153, 39);
             this.button_boisson_7.TabIndex = 13;
@@ -1662,10 +1683,10 @@
             // lineShape4
             // 
             this.lineShape4.Name = "lineShape4";
-            this.lineShape4.X1 = 9;
-            this.lineShape4.X2 = 702;
-            this.lineShape4.Y1 = 189;
-            this.lineShape4.Y2 = 189;
+            this.lineShape4.X1 = 8;
+            this.lineShape4.X2 = 701;
+            this.lineShape4.Y1 = 173;
+            this.lineShape4.Y2 = 173;
             // 
             // button_calc
             // 
@@ -1746,6 +1767,74 @@
             this.label_prix.TabIndex = 10;
             this.label_prix.Text = "Montant : 0 €";
             this.label_prix.Visible = false;
+            // 
+            // button_boisson_24
+            // 
+            this.button_boisson_24.Location = new System.Drawing.Point(258, 372);
+            this.button_boisson_24.Name = "button_boisson_24";
+            this.button_boisson_24.Size = new System.Drawing.Size(153, 39);
+            this.button_boisson_24.TabIndex = 50;
+            this.button_boisson_24.Text = "Vittel / Badoit 100 cl";
+            this.button_boisson_24.UseVisualStyleBackColor = true;
+            this.button_boisson_24.Click += new System.EventHandler(this.button_boisson_24_Click);
+            // 
+            // numeric_boisson_24
+            // 
+            this.numeric_boisson_24.Location = new System.Drawing.Point(417, 383);
+            this.numeric_boisson_24.Name = "numeric_boisson_24";
+            this.numeric_boisson_24.Size = new System.Drawing.Size(43, 20);
+            this.numeric_boisson_24.TabIndex = 49;
+            // 
+            // button_boisson_25
+            // 
+            this.button_boisson_25.Location = new System.Drawing.Point(258, 417);
+            this.button_boisson_25.Name = "button_boisson_25";
+            this.button_boisson_25.Size = new System.Drawing.Size(153, 39);
+            this.button_boisson_25.TabIndex = 52;
+            this.button_boisson_25.Text = "Vittel / Badoit 50 cl";
+            this.button_boisson_25.UseVisualStyleBackColor = true;
+            this.button_boisson_25.Click += new System.EventHandler(this.button_boisson_25_Click);
+            // 
+            // numeric_boisson_25
+            // 
+            this.numeric_boisson_25.Location = new System.Drawing.Point(417, 428);
+            this.numeric_boisson_25.Name = "numeric_boisson_25";
+            this.numeric_boisson_25.Size = new System.Drawing.Size(43, 20);
+            this.numeric_boisson_25.TabIndex = 51;
+            // 
+            // button_boisson_26
+            // 
+            this.button_boisson_26.Location = new System.Drawing.Point(9, 462);
+            this.button_boisson_26.Name = "button_boisson_26";
+            this.button_boisson_26.Size = new System.Drawing.Size(153, 39);
+            this.button_boisson_26.TabIndex = 54;
+            this.button_boisson_26.Text = "Tsingtao";
+            this.button_boisson_26.UseVisualStyleBackColor = true;
+            this.button_boisson_26.Click += new System.EventHandler(this.button_boisson_26_Click);
+            // 
+            // numeric_boisson_26
+            // 
+            this.numeric_boisson_26.Location = new System.Drawing.Point(168, 473);
+            this.numeric_boisson_26.Name = "numeric_boisson_26";
+            this.numeric_boisson_26.Size = new System.Drawing.Size(43, 20);
+            this.numeric_boisson_26.TabIndex = 53;
+            // 
+            // button_boisson_27
+            // 
+            this.button_boisson_27.Location = new System.Drawing.Point(258, 462);
+            this.button_boisson_27.Name = "button_boisson_27";
+            this.button_boisson_27.Size = new System.Drawing.Size(153, 39);
+            this.button_boisson_27.TabIndex = 56;
+            this.button_boisson_27.Text = "Singha";
+            this.button_boisson_27.UseVisualStyleBackColor = true;
+            this.button_boisson_27.Click += new System.EventHandler(this.button_boisson_27_Click);
+            // 
+            // numeric_boisson_27
+            // 
+            this.numeric_boisson_27.Location = new System.Drawing.Point(417, 473);
+            this.numeric_boisson_27.Name = "numeric_boisson_27";
+            this.numeric_boisson_27.Size = new System.Drawing.Size(43, 20);
+            this.numeric_boisson_27.TabIndex = 55;
             // 
             // Form1
             // 
@@ -1833,6 +1922,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_boisson_27)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1987,6 +2080,14 @@
         private System.Windows.Forms.Label label_prix;
         private System.Windows.Forms.NumericUpDown numeric_entree_10;
         private System.Windows.Forms.Button button_entree_10;
+        private System.Windows.Forms.Button button_boisson_25;
+        private System.Windows.Forms.NumericUpDown numeric_boisson_25;
+        private System.Windows.Forms.Button button_boisson_24;
+        private System.Windows.Forms.NumericUpDown numeric_boisson_24;
+        private System.Windows.Forms.Button button_boisson_27;
+        private System.Windows.Forms.NumericUpDown numeric_boisson_27;
+        private System.Windows.Forms.Button button_boisson_26;
+        private System.Windows.Forms.NumericUpDown numeric_boisson_26;
     }
 }
 
